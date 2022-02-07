@@ -2867,6 +2867,10 @@ footer .copyright a {
   color: #7aa62c;
 }
 
+.balance-h2-karriere h2 {
+  color: #ffcc00;
+}
+
 .balance-h3 h3 {
   color: #7aa62c;
 }
@@ -2905,6 +2909,13 @@ footer .copyright a {
   right: 60%;
 }
 
+.balance-background-ems {
+  position: absolute;
+  top: 0px;
+  z-index: -100;
+  right: -150px;
+}
+
 /* Homepage Map (Medano Solution) */
 .balance-germany-map {
   margin-bottom: -350px;
@@ -2925,33 +2936,73 @@ footer .copyright a {
   }
 }
 
+/* Privacy policy accordion (Medano Solution) */
+.balance-accordion .vc_tta-panel .vc_tta-panel-body {
+  margin: 50px;
+}
+
+.balance-accordion .vc_tta-panel .vc_tta-panel-heading {
+  border-color: #ebebeb !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.balance-accordion .vc_tta-panel .vc_tta-panel-heading:hover {
+  border-bottom-color: #7aa62c !important;
+  background-color: #ffffff !important;
+}
+
+.balance-accordion .vc_tta-panel .vc_tta-panel-heading:hover h4 a {
+  color: #7aa62c !important;
+}
+
+.balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 {
+  font-size: 48px;
+  margin: 30px !important;
+}
+
+@media (max-width: 1400px) {
+  .balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 {
+    font-size: 20px;
+  }
+}
+
+.balance-accordion .vc_active .vc_tta-panel-heading {
+  border-bottom-color: #7aa62c !important;
+}
+
+.balance-accordion .vc_active .vc_tta-panel-heading h4 a {
+  color: #7aa62c !important;
+}
+
 /* Custom styles Button (Medano Solution) */
 .balance-button .vc_btn3 {
-  background-image: none !important;
   border-width: 2px !important;
   border-color: #ffcc00 !important;
+  border-radius: 100px !important;
   font-weight: 600;
   font-size: 20px !important;
   letter-spacing: 1px;
   padding-right: 70px !important;
   text-align: center !important;
+  background-repeat: no-repeat !important;
+  background-position: right -2px top !important;
+  background-size: 52px 52px !important;
+  background-image: url(./img/balance/button-yellow.png) !important;
 }
 
-.balance-button .vc_btn3 i {
-  height: 55px !important;
-  width: 55px;
-  border-radius: 50px;
-  background-color: #ffcc00;
-  right: -1px !important;
-  text-align: center;
-  padding: 19px;
-  border-color: #ffcc00 !important;
-  border-width: 1px !important;
-  border: solid;
-}
-
-.balance-button .vc_btn3 i:before {
-  color: #ffffff;
+@media (max-width: 400px) {
+  .balance-button .vc_btn3 {
+    padding-right: 60px !important;
+    font-size: 14px !important;
+    background-size: 46px 46px !important;
+  }
 }
 
 .balance-button .vc_btn3:hover {
@@ -2959,15 +3010,7 @@ footer .copyright a {
   border-width: 2px !important;
   border-color: #afca0b !important;
   color: #ffffff !important;
-}
-
-.balance-button .vc_btn3:hover i {
-  background-color: #ffffff !important;
-  border-color: #afca0b !important;
-}
-
-.balance-button .vc_btn3:hover i:before {
-  color: #afca0b !important;
+  background-image: url(./img/balance/button-white.png) !important;
 }
 
 /* Custom styles Header (Medano Solution) */
@@ -3068,10 +3111,22 @@ footer .copyright a {
 }
 
 .balance-card-main {
-  font-size: 34px !important;
-  font-weight: 600 !important;
-  line-height: 50px !important;
-  margin-top: 30px !important;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .balance-card-main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .balance-card-main {
+    font-size: 34px;
+  }
 }
 
 .balance-card-hover {
@@ -3085,6 +3140,18 @@ footer .copyright a {
 .balance-card-hover-bottom {
   font-size: 80px;
   letter-spacing: -4px;
+}
+
+@media (max-width: 1200px) {
+  .balance-card-hover-bottom {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .balance-card-hover-bottom {
+    font-size: 80px;
+  }
 }
 
 .balance-card-mobile-h3 {
@@ -3173,6 +3240,29 @@ footer .copyright a {
   .balance-footer-section .balance-footer-logo img {
     width: 191px;
     height: 40px;
+  }
+}
+
+/* Custom styles for Karriere (Medano Solution) */
+.balance-jobs-image-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .balance-jobs-image-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .balance-jobs-image {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .balance-karriere-column {
+    width: 100% !important;
   }
 }
 
