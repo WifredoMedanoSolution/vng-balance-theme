@@ -2198,6 +2198,85 @@ footer {
   }
 }
 
+/* Custom styles Hamburger Menu (Medano Solution) */
+.balance-header-section {
+  .balance-header-row {
+    @media (max-width: $bp_tablet) {
+      div.vc_col-sm-4 {
+        width: 100%;
+      }
+    }
+
+    figure {
+      div.vc_single_image-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        div.bal_hamburger_bars {
+          display: none;
+          width: 40px;
+          cursor: pointer;
+
+          div.bal_hamburguer_bar {
+            width: 32px;
+            height: 0px;
+            margin: 7px 0;
+            opacity: 1;
+            border: 2px solid #000;
+            border-radius: 2px;
+            background-color: #000;
+            transition: width 0.2s linear;
+            -webkit-transition: width 0.2s linear;
+            -moz-transition: width 0.2s linear;
+            -ms-transition: width 0.2s linear;
+            -o-transition: width 0.2s linear;
+          }
+
+          &:hover,
+          &.bal_close {
+            div.bal_hamburguer_bar {
+              &.bar-1 {
+                width: 16px;
+                transition: width 0.2s linear;
+                -webkit-transition: width 0.2s linear;
+                -moz-transition: width 0.2s linear;
+                -ms-transition: width 0.2s linear;
+                -o-transition: width 0.2s linear;
+              }
+
+              &.bar-2 {
+                width: 48px;
+                transition: width 0.2s linear;
+                -webkit-transition: width 0.2s linear;
+                -moz-transition: width 0.2s linear;
+                -ms-transition: width 0.2s linear;
+                -o-transition: width 0.2s linear;
+              }
+            }
+          }
+
+          &.bal_close {
+            div.bal_hamburguer_bar {
+              &.bar-1,
+              &.bar-2,
+              &.bar-3 {
+                //   display: none;
+              }
+            }
+          }
+        }
+        @media (max-width: $bp_tablet) {
+          div.bal_hamburger_bars {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Custom styles Product Card (Medano Solution) */
 .balance-card {
   border-radius: 0px 24px 0px 0px;
@@ -2222,7 +2301,7 @@ footer {
     min-height: 200px;
     width: 300px;
     margin: 10px auto;
-	display: block;
+    display: block;
   }
 }
 
