@@ -350,14 +350,14 @@ header {
     .menu {
       list-style-type: none;
       margin-bottom: 0;
+      padding: 0 15px;
       li {
-        border-top: 1px solid $bgygrey;
         a {
           color: $colormenulinks;
           text-decoration: none;
           font-size: $sizemenulinks;
           display: block;
-          padding: 10px;
+          padding: 10px 0;
         }
         &.current-menu-item {
           background: $bgyellow;
@@ -374,6 +374,20 @@ header {
           border-top: none;
         }
       }
+      &#menu-submenu {
+        margin-bottom: 2rem;
+        li {
+          a {
+            font-size: 1rem;
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+    .bal-mobile-menu-split {
+      margin: 15px;
+      border: 0.1px solid #000;
+      background-color: #000;
     }
   }
 }
@@ -2258,7 +2272,7 @@ footer {
 
         div.bal_hamburger_bars {
           display: none;
-          width: 40px;
+          width: 32px;
           cursor: pointer;
 
           div.bal_hamburguer_bar {
@@ -2289,7 +2303,7 @@ footer {
               }
 
               &.bar-2 {
-                width: 48px;
+                width: 40px;
                 transition: width 0.2s linear;
                 -webkit-transition: width 0.2s linear;
                 -moz-transition: width 0.2s linear;
@@ -2299,19 +2313,46 @@ footer {
             }
           }
 
-          &.bal_close {
+          i.bal_hamburguer_close {
+            display: none;
+          }
+
+          &.active {
             div.bal_hamburguer_bar {
               &.bar-1,
               &.bar-2,
               &.bar-3 {
-                //   display: none;
+                display: none;
               }
+            }
+            i.bal_hamburguer_close {
+              display: block;
             }
           }
         }
         @media (max-width: $bp_tablet) {
           div.bal_hamburger_bars {
             display: block;
+          }
+        }
+        img.bal_hamburguer_close {
+          display: none;
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+          transition: display 0.2s linear;
+          -webkit-transition: display 0.2s linear;
+          -moz-transition: display 0.2s linear;
+          -ms-transition: display 0.2s linear;
+          -o-transition: display 0.2s linear;
+
+          &.active {
+            display: block;
+            transition: display 0.2s linear;
+            -webkit-transition: display 0.2s linear;
+            -moz-transition: display 0.2s linear;
+            -ms-transition: display 0.2s linear;
+            -o-transition: display 0.2s linear;
           }
         }
       }

@@ -50,6 +50,7 @@
 									<div class="bal_hamburguer_bar bar-2"></div>
 									<div class="bal_hamburguer_bar bar-3"></div>
 								</div>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/balance/close.svg" class="bal_hamburguer_close" alt="Close navigation menu button" title="Close button" />
 							</div>
 						</figure>
 					</div>
@@ -61,25 +62,8 @@
 				<div class="wpb_wrapper">
 					<div class="vc_wp_custommenu balance-header-menu">
 						<div class="widget widget_nav_menu">
-							<div class="menu-main-menu-container">
-								<ul id="menu-main-menu" class="menu">
-									<li id="menu-item-269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-269">
-										<a href="/produkte/">Produkte</a>
-									</li>
-									<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268">
-										<a href="/standorte/">Standorte</a>
-									</li>
-									<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266">
-										<a href="/aktuelles/">News</a>
-									</li>
-									<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267">
-										<a href="/jobs/">Jobs</a>
-									</li>
-									<li id="menu-item-270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-270">
-										<a href="#">Über uns</a>
-									</li>
-								</ul>
-							</div>
+						<!-- Get elements from WordPress Appereance > Menus > Main Menu (Hauptnavigation) -->
+						<?php wp_nav_menu( array( 'theme_location' => 'main', 'depth' => 1 ) );?>
 						</div>
 					</div>
 				</div>
@@ -102,7 +86,7 @@
                             <?php endif;?>
 							<!-- Get elements from WordPress Appereance > Menus > Main Menu (Hauptnavigation) -->
                             <?php wp_nav_menu( array( 'theme_location' => 'main', 'depth' => 1 ) );?>
-							<div class="balance-mobile-menu-split"></div>
+							<div class="bal-mobile-menu-split"></div>
                             <?php wp_nav_menu( array( 'theme_location' => 'submenu' ) );?>
 							<!-- Skip extra content from Footer menu -->
                             <?php // wp_nav_menu(array('theme_location' => 'footer')); ?>
