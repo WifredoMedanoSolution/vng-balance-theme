@@ -32,6 +32,7 @@ class NewsPostType
             'description' => 'Aktuelles',
             'labels' => $labels,
             'supports' => array('title', 'editor', 'revisions', 'thumbnail', 'excerpt'),
+			'taxonomies' => array( 'category' ),
             'hierarchical' => true,
             'public' => true,
             'show_ui' => true,
