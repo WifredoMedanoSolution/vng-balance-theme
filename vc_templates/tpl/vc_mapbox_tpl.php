@@ -19,7 +19,7 @@
                 <div class="wpb_wrapper">
                     <div id='map'></div>
                     <div class="map-teaser"
-                        style="background-image: url(/wp-content/themes/balance/img/mapbox-teaser.PNG);">
+                        style="background-image: url(/wp-content/themes/balance/img/balance/background-map.png); border-radius: 10px;">
                     </div>
                 </div>
             </div>
