@@ -126,8 +126,17 @@ jQuery(document).ready(function ($) {
 
   //Mobile hamburger menu
   $(".bal_hamburger_bars").click(function () {
-    $(this).toggleClass("bal_close");
-    $("#mobile-menu").slideToggle(500, function () {
+    $(this).toggleClass("active");
+    $(".bal_hamburguer_close").toggleClass("active");
+    $("#mobile-menu").stop().slideToggle(500, function () {
+      $(this).toggleClass("active");
+    });
+    return false;
+  });
+  $(".bal_hamburguer_close").click(function () {
+    $(this).toggleClass("active");
+    $(".bal_hamburger_bars").toggleClass("active");
+    $("#mobile-menu").stop().slideToggle(500, function () {
       $(this).toggleClass("active");
     });
     return false;
