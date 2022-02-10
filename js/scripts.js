@@ -128,17 +128,21 @@ jQuery(document).ready(function ($) {
   $(".bal_hamburger_bars").click(function () {
     $(this).toggleClass("active");
     $(".bal_hamburguer_close").toggleClass("active");
-    $("#mobile-menu").stop().slideToggle(500, function () {
-      $(this).toggleClass("active");
-    });
+    $("#mobile-menu")
+      .stop()
+      .slideToggle(500, function () {
+        $(this).toggleClass("active");
+      });
     return false;
   });
   $(".bal_hamburguer_close").click(function () {
     $(this).toggleClass("active");
     $(".bal_hamburger_bars").toggleClass("active");
-    $("#mobile-menu").stop().slideToggle(500, function () {
-      $(this).toggleClass("active");
-    });
+    $("#mobile-menu")
+      .stop()
+      .slideToggle(500, function () {
+        $(this).toggleClass("active");
+      });
     return false;
   });
 
@@ -352,5 +356,42 @@ jQuery(document).ready(function ($) {
           });
       });
     }
+  });
+
+  /* Kontakt page script */
+  $(document).ready(function () {
+    $(".kontakt-element")
+      .find(":input")
+      .on("keyup", function () {
+        if ($(this).val().length) {
+          $(this)
+            .parent()
+            .parent()
+            .find(">:first-child")
+            .css("display", "initial");
+        } else {
+          $(this)
+            .parent()
+            .parent()
+            .find(">:first-child")
+            .css("display", "none");
+        }
+      });
+
+    $("textarea[name=nachricht]").on("keyup", function () {
+      if ($(this).val().length) {
+        $(this)
+          .parent()
+          .parent()
+          .find(">:first-child")
+          .css("font-weight", "700");
+      } else {
+        $(this)
+          .parent()
+          .parent()
+          .find(">:first-child")
+          .css("font-weight", "300");
+      }
+    });
   });
 });
