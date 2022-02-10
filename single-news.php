@@ -6,29 +6,29 @@
 <main role="main" class="single-news">
     <!-- <?php if ( have_posts() ): while ( have_posts() ): the_post();?>
 
-																    <?php if ( ! empty( $header_image = get_post_meta( get_the_ID(), 'header-image', true ) ) ): ?>
-																    <div class="single-news-header header-image"
-																        style="background-image: url(<?php echo wp_get_attachment_url( $header_image ); ?>)">
-																    </div>
-																    <?php else: ?> -->
-								    <!-- <div class="single-news-header yellow">
-								        <div class="vc_container">
-								            <div class="vc_row">
-								                <div class="wpb_column vc_column_container vc_col-sm-12">
-								                    <div class="vc_column-inner">
-								                        <div class="wpb_wrapper">
-								                            <div class="wpb_text_column wpb_content_element ">
-								                                <div class="wpb_wrapper">
-								                                    <h1>Aktuelles</h1>
-								                                </div>
-								                            </div>
-								                        </div>
-								                    </div>
-								                </div>
-								            </div>
-								        </div>
-								    </div> -->
-								    <!-- <?php endif;?> -->
+	<?php if ( ! empty( $header_image = get_post_meta( get_the_ID(), 'header-image', true ) ) ): ?>
+	<div class="single-news-header header-image"
+		style="background-image: url(<?php echo wp_get_attachment_url( $header_image ); ?>)">
+	</div>
+	<?php else: ?> -->
+	<!-- <?php endif;?> -->
+	<div class="single-news-header-mobile">
+		<div class="vc_container">
+			<div class="vc_row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+							<div class="wpb_text_column wpb_content_element ">
+								<div class="wpb_wrapper">
+									<h1>News</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     <div class="vc_container">
         <div class="vc_row-full-width vc_clearfix"></div>
         <div class="vc_row wpb_row vc_row-fluid">
@@ -40,10 +40,10 @@
 								<div class="single-news-details">
 									<div class="single-news-date">
 										<i class="fas fa-circle"></i>
-										<?php the_date();?>
+										<?php the_date(); ?>
 									</div>
 									<div class="single-news-category">
-										<?php the_category( ', ' );?>
+										<?php the_category( ', ' ); ?>
 									</div>
 								</div>
 
@@ -58,11 +58,15 @@
 									<?php the_content();?>
 								</div>
 								<?php if ( ! empty( $pdf = get_post_meta( get_the_ID(), 'pdf-news', true ) ) ): ?>
-									<div class="single-news-pdf balance-download vc_btn3-container vc_btn3-left">
+									<div class="single-news-download balance-download vc_btn3-container vc_btn3-left">
 										<a class="bal_download-button vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-custom" target="_blank" href="<?php echo wp_get_attachment_url( $pdf ) ?>">
-										DOWNLOAD <?php echo strtoupper( get_the_title( $pdf ) ) ?></a>
+										DOWNLOAD ARTIKEL<?php //echo strtoupper( get_the_title( $pdf ) ); ?></a>
 									</div>
-									<?php endif;?>
+									<div class="single-news-download balance-download vc_btn3-container vc_btn3-left">
+									<a class="bal_download-button vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-custom" target="_blank" href="<?php echo wp_get_attachment_url( $img ) ?>">
+										DOWNLOAD PRESSEBILD<?php //echo strtoupper( get_the_title( $pdf ) ); ?></a>
+									</div>
+									<?php endif; ?>
 
 							</div>
                         </article>
