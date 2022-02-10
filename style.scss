@@ -1849,8 +1849,10 @@ footer {
   }
   .single-news-thumbnail {
     float: left;
-    margin-right: 50px;
-    margin-bottom: 25px;
+    // margin-right: 50px;
+    // margin-bottom: 25px;	
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
   .single-news-date {
     margin-bottom: 10px;
@@ -1910,10 +1912,20 @@ footer {
     }
   }
 
+  .single-news-header-mobile {
+    display: none;
+  }
+
   .single-news-wrapper {
     background-color: #f0e9de7d;
     border-radius: 0px 50px 0px 0px;
+    -webkit-border-radius: 0px 50px 0px 0px;
+    -moz-border-radius: 0px 50px 0px 0px;
+    -ms-border-radius: 0px 50px 0px 0px;
+    -o-border-radius: 0px 50px 0px 0px;
     padding: 80px;
+    margin-bottom: 80px;
+    margin-top: 50px;
 
     .single-news-details {
       display: flex;
@@ -1942,16 +1954,16 @@ footer {
 
     .single-news-title {
       h1 {
+        font-family: "Fira Sans Light";
         font-size: 60px;
-        font-weight: lighter;
         text-align: left;
       }
     }
 
     .single-news-thumbnail {
       // float: left;
-      margin-right: 50px;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
+      margin-top: 40px;
       img {
         width: 100%;
         height: 100%;
@@ -1959,9 +1971,13 @@ footer {
     }
     .single-news-content {
       clear: both;
+
+      p {
+        font-family: "Fira Sans Light";
+      }
     }
 
-    .single-news-pdf {
+    .single-news-download  {
       a {
         color: black;
         font-weight: bold;
@@ -1994,116 +2010,323 @@ footer {
   }
 }
 
-// Aktuelles new version (Medano Solution)
-div.bal_aktuelles-grid {
-  //   div.vc_grid-item.vc_clearfix.vc_col-sm-6 {
-  //     max-width: 674px;
-  // 	overflow: visible;
-  //   }
-  .bal_aktuelles-section.vc_gitem-zone {
-    overflow: visible;
-    div.bal_aktuelles-wrapper {
-      max-width: 674px;
-      width: 674px;
-
-      div.vc_grid.vc_row.vc_grid-item {
-        padding-right: 70px;
-      }
-
-      img.vc_single_image-img {
-        border-radius: 0px 30px 0px 0px;
-      }
-
-      div.bal_aktuelles-post-date.bal_aktuelles-date {
-        div {
-          font-weight: 100;
-        }
-      }
-
-      div.bal_aktuelles-post-title.bal_aktuelles-title {
-        div {
-          color: #7aa62c;
-          font-size: 30px;
-          text-align: Left;
-        }
-      }
-
-      div.bal_aktuelles-button.bal_aktuelles-read-more.bal_aktuelles-more {
-        a {
-          background-image: none;
-          padding: 0;
-          padding-left: 28px;
-          font-size: 24px;
-          font-weight: 800;
-          i {
-            left: 0;
-
-            &:before {
-              color: #ffcc00;
-            }
-          }
-        }
-      }
-    }
+@media (max-width: $bp_mobile) {
+	.single-news {
+	  .single-news-header-mobile {
+		display: block;
+  
+		div.wpb_text_column.wpb_content_element {
+		  margin-top: 35px;
+		  margin-bottom: 20px;
+  
+		  h1 {
+			font-family: "Fira Sans Light";
+			font-size: 50px;
+		  }
+		}
+	  }
+  
+	  .single-news-wrapper {
+		background-color: #f0e9de7d;
+		border-radius: 0px 50px 0px 0px;
+		-webkit-border-radius: 0px 50px 0px 0px;
+		-moz-border-radius: 0px 50px 0px 0px;
+		-ms-border-radius: 0px 50px 0px 0px;
+		-o-border-radius: 0px 50px 0px 0px;
+		padding: 25px 0;
+		margin-bottom: 80px;
+		margin-top: 0;
+  
+		.single-news-details {
+		  padding: 0 20px;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: left;
+  
+		  .single-news-date {
+			margin-bottom: 10px;
+			// float: left;
+			font-size: 18px;
+			font-weight: bolder;
+			i {
+			  color: #ffcc00;
+			  margin-right: 8px;
+			}
+		  }
+		  .single-news-category {
+			margin-bottom: 10px;
+			a {
+			  color: #000;
+			  font-size: 18px;
+			  font-weight: bolder;
+			  &:hover {
+				text-decoration: none;
+			  }
+			}
+		  }
+		}
+  
+		.single-news-title {
+		  padding: 0 20px;
+  
+		  h1 {
+			font-family: "Fira Sans Light";
+			font-size: 30px;
+			font-weight: lighter;
+			text-align: left;
+		  }
+		}
+  
+		.single-news-thumbnail {
+		  // float: left;
+		  margin: 20px 0;
+  
+		  img {
+			width: 100%;
+			height: 100%;
+		  }
+		}
+		.single-news-content {
+		  padding: 0 20px;
+		  clear: both;
+  
+		  p {
+			font-family: "Fira Sans Light";
+			font-size: 18px;
+		  }
+		}
+  
+		.single-news-download {
+		  padding: 0 20px;
+  
+		  a {
+			color: black;
+			font-weight: bold;
+			border-width: 2px !important;
+			border-color: #ffcc00 !important;
+			border-radius: 100px !important;
+			font-weight: 600;
+			font-size: 20px !important;
+			letter-spacing: 1px;
+			padding-right: 70px !important;
+			text-align: center !important;
+			background-repeat: no-repeat !important;
+			background-position: right -2px top !important;
+			background-size: 52px 52px !important;
+			background-image: url(./img/balance/button-yellow-download.png) !important;
+			@media (max-width: 400px) {
+			  padding-right: 60px !important;
+			  font-size: 14px !important;
+			  background-size: 46px 46px !important;
+			}
+			&:hover {
+			  background-color: #afca0b !important;
+			  border-width: 2px !important;
+			  border-color: #afca0b !important;
+			  color: #ffffff !important;
+			  background-image: url(./img/balance/button-white-download.png) !important;
+			}
+		  }
+		}
+	  }
+	}
   }
-
-  div.vc_pageable-load-more-btn {
-    div {
-      a {
-        border-width: 2px !important;
-        border-color: #ffcc00 !important;
-        border-radius: 100px !important;
-        font-weight: 600;
-        font-size: 20px !important;
-        letter-spacing: 1px;
-        padding-right: 70px !important;
-        text-align: center !important;
-        background-repeat: no-repeat !important;
-        background-position: right -2px top !important;
-        background-size: 52px 52px !important;
-        background-image: url(./img/balance/button-yellow.png) !important;
-        @media (max-width: 400px) {
-          padding-right: 60px !important;
-          font-size: 14px !important;
-          background-size: 46px 46px !important;
-        }
-        &:hover {
-          background-color: #afca0b !important;
-          border-width: 2px !important;
-          border-color: #afca0b !important;
-          color: #ffffff !important;
-          background-image: url(./img/balance/button-white.png) !important;
-        }
-      }
-    }
+  
+  // Aktuelles new version (Medano Solution)
+  .balance-h1 {
+	display: block;
+  
+	div.wpb_wrapper {
+	  // margin-top: 35px;
+	  // margin-bottom: 20px;
+  
+	  h1 {
+		font-size: 80px;
+		font-family: "Fira Sans Light";
+	  }
+	}
   }
-}
-
-.vc-hoverbox .vc-hoverbox-block.vc-hoverbox-back,
-.vc-hoverbox .vc-hoverbox-block {
-  transition: transform 0.7s ease-in-out;
-}
-
-@media screen and (min-width: 1350px) {
-  .vc-hoverbox-inner {
-    min-height: 350px !important;
+  
+  div.bal_aktuelles-grid {
+	.bal_aktuelles-section.vc_gitem-zone {
+	  div.bal_aktuelles-wrapper {
+		max-width: 674px;
+  
+		div.vc_grid.vc_row.vc_grid-item {
+		  padding-right: 70px;
+		}
+  
+		img.vc_single_image-img {
+		  border-radius: 0px 30px 0px 0px;
+		}
+  
+		div.bal_aktuelles-post-date.bal_aktuelles-date {
+		  div {
+			font-weight: 100;
+		  }
+		}
+  
+		div.bal_aktuelles-post-title.bal_aktuelles-title {
+		  div {
+			color: #7aa62c;
+			font-size: 30px;
+			text-align: Left;
+			font-weight: 600;
+		  }
+		}
+  
+		div.bal_aktuelles-button.bal_aktuelles-read-more.bal_aktuelles-more {
+		  a {
+			background-image: none;
+			padding: 0;
+			padding-left: 28px;
+			font-size: 24px;
+			font-weight: 800;
+			i {
+			  left: 0;
+  
+			  &:before {
+				color: #ffcc00;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  
+	div.vc_pageable-load-more-btn {
+	  div {
+		a {
+		  border-width: 2px !important;
+		  border-color: #ffcc00 !important;
+		  border-radius: 100px !important;
+		  font-weight: 600;
+		  font-size: 20px !important;
+		  letter-spacing: 1px;
+		  padding-right: 70px !important;
+		  text-align: center !important;
+		  background-repeat: no-repeat !important;
+		  background-position: right -2px top !important;
+		  background-size: 52px 52px !important;
+		  background-image: url(./img/balance/button-yellow.png) !important;
+		  @media (max-width: 400px) {
+			padding-right: 60px !important;
+			font-size: 14px !important;
+			background-size: 46px 46px !important;
+		  }
+		  &:hover {
+			background-color: #afca0b !important;
+			border-width: 2px !important;
+			border-color: #afca0b !important;
+			color: #ffffff !important;
+			background-image: url(./img/balance/button-white.png) !important;
+		  }
+		}
+	  }
+	}
   }
-}
-
-.product-icon {
-  width: 65px;
-  height: auto;
-  background: white;
-  padding: 5px;
-  border-radius: 50%;
-  float: right;
-}
-
-.white-background {
+  
+  @media (max-width: $bp_mobile) {
+	.balance-h1 {
+	  display: block;
+  
+	  div.wpb_wrapper {
+		margin-top: 0;
+		margin-bottom: 0;
+  
+		h1 {
+		  font-size: 50px;
+		  font-family: "Fira Sans Light";
+		}
+	  }
+	}
+  
+	div.bal_aktuelles-grid {
+	  .bal_aktuelles-section.vc_gitem-zone {
+		div.bal_aktuelles-wrapper {
+		  div.bal_aktuelles-post-date.bal_aktuelles-date {
+			div {
+			  font-size: 18px;
+			}
+		  }
+  
+		  div.bal_aktuelles-post-title.bal_aktuelles-title {
+			div {
+			  font-size: 20px;
+			  line-height: 30px;
+			}
+		  }
+  
+		  div.bal_aktuelles-post-excerpt.bal_aktuelles-excerpt {
+			font-size: 18px;
+		  }
+  
+		  div.bal_aktuelles-button.bal_aktuelles-read-more.bal_aktuelles-more {
+			a {
+			  font-size: 18px;
+			}
+		  }
+		}
+	  }
+  
+	  div.vc_pageable-load-more-btn {
+		div {
+		  a {
+			border-width: 2px !important;
+			border-color: #ffcc00 !important;
+			border-radius: 100px !important;
+			font-weight: 600;
+			font-size: 20px !important;
+			letter-spacing: 1px;
+			padding-right: 70px !important;
+			text-align: center !important;
+			background-repeat: no-repeat !important;
+			background-position: right -2px top !important;
+			background-size: 52px 52px !important;
+			background-image: url(./img/balance/button-yellow.png) !important;
+			@media (max-width: 400px) {
+			  padding-right: 60px !important;
+			  font-size: 14px !important;
+			  background-size: 46px 46px !important;
+			}
+			&:hover {
+			  background-color: #afca0b !important;
+			  border-width: 2px !important;
+			  border-color: #afca0b !important;
+			  color: #ffffff !important;
+			  background-image: url(./img/balance/button-white.png) !important;
+			}
+		  }
+		}
+	  }
+	}
+  }
+  
+  .vc-hoverbox .vc-hoverbox-block.vc-hoverbox-back,
+  .vc-hoverbox .vc-hoverbox-block {
+	transition: transform 0.7s ease-in-out;
+  }
+  
+  @media screen and (min-width: 1350px) {
+	.vc-hoverbox-inner {
+	  min-height: 350px !important;
+	}
+  }
+  
   .product-icon {
-    background: #ececec;
+	width: 65px;
+	height: auto;
+	background: white;
+	padding: 5px;
+	border-radius: 50%;
+	float: right;
   }
-}
+  
+  .white-background {
+	.product-icon {
+	  background: #ececec;
+	}
+  }
 
 /* Custom styles Wonder Slider (Medano Solution) */
 .balance-homepage-slider {
