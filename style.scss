@@ -2454,25 +2454,47 @@ div.bal_aktuelles-grid {
   }
 }
 
-.balance-h2 h2 {
-  color: #7aa62c;
-}
-
-.balance-h2-karriere h2 {
-  color: #ffcc00;
-}
-
-.balance-h2-standorte h2 {
-  @media (max-width: 768px) {
-    text-align: center !important;
+.balance-h2 {
+  h2 {
+    color: #7aa62c;
   }
 }
 
-.balance-h3 h3 {
-  color: #7aa62c;
-  @media (max-width: $bp_laptop) {
-    font-size: 24px;
-    line-height: 1rem;
+.balance-h2-karriere {
+  h2 {
+    color: #ffcc00;
+  }
+}
+
+.balance-h2-standorte {
+  h2 {
+    @media (max-width: 768px) {
+      text-align: center !important;
+    }
+  }
+}
+
+.balance-h2-kontakt {
+  h2 {
+    font-size: 50px;
+    color: #7aa62c;
+    font-weight: 700;
+    @media (max-width: 1400px) {
+      font-size: 40px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.balance-h3 {
+  h3 {
+    color: #7aa62c;
+    @media (max-width: $bp_laptop) {
+      font-size: 24px;
+      line-height: 1rem;
+    }
   }
 }
 
@@ -2734,6 +2756,146 @@ div.bal_aktuelles-grid {
     &:hover {
       background-image: url(./img/balance/button-white-download.png) !important;
     }
+  }
+}
+
+.balance-kontakt-button {
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 20px !important;
+  height: 55px;
+  border: solid !important;
+  border-width: 2px !important;
+  border-color: #ffcc00 !important;
+  border-radius: 100px !important;
+  font-weight: 600;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  padding-right: 60px !important;
+  text-align: center !important;
+  background-repeat: no-repeat !important;
+  background-position: right -2px top !important;
+  background-size: 52px 52px !important;
+  background-image: url(./img/balance/button-yellow.png) !important;
+  &:hover {
+    background-color: #afca0b !important;
+    border-width: 2px !important;
+    border-color: #afca0b !important;
+    color: #ffffff !important;
+    background-image: url(./img/balance/button-white.png) !important;
+  }
+}
+
+/* Custom styles Kontakt Page (Medano Solution) */
+.balance-kontakt-privacy-policy {
+  padding-right: 20px;
+  input[type="checkbox"] + span {
+    padding-left: 30px;
+    margin-left: -16px;
+    background-repeat: no-repeat !important;
+    background-position: left 0px top 0px !important;
+    background-size: 17px !important;
+    line-height: 0;
+    background-image: url(./img/balance/checkbox-unchecked.png) !important;
+  }
+  input[type="checkbox"]:checked + span {
+    background-image: url(./img/balance/checkbox-checked.png) !important;
+  }
+  label {
+    input {
+      opacity: 0;
+    }
+    .wpcf7-list-item-label {
+      font-size: 16px !important;
+      font-weight: 300 !important;
+      color: #6f6f6f;
+      @media (max-width: 1400px) {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+.kontakt-row {
+  display: flex;
+  margin-bottom: 20px;
+  column-gap: 10px;
+  @media (max-width: 767px) {
+    display: initial;
+    margin-bottom: 0px;
+    column-gap: 0px;
+  }
+}
+
+.kontakt-label {
+  margin-left: 10px;
+}
+
+.kontakt-label-hidden {
+  display: none;
+}
+
+.kontakt-label-textarea {
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.wpcf7-form {
+  input[type="text"],
+  input[type="email"] {
+    border: solid;
+    border-width: 0 0 2px;
+    border-color: #7aa62c;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  textarea {
+    border: solid;
+    border-width: 2px;
+    border-color: #6f6f6f;
+    width: 100%;
+    padding-left: 10px;
+    &:hover {
+      border-color: #7aa62c;
+    }
+  }
+}
+
+.label-anrede {
+  font-weight: 700;
+}
+
+.kontakt-radio {
+  .wpcf7-list-item {
+    input[type="radio"] {
+      opacity: 0;
+    }
+    input[type="radio"] + span {
+      padding-left: 20px;
+      margin-left: -16px;
+      background-repeat: no-repeat !important;
+      background-position: left 0px top 0px !important;
+      background-size: 19px !important;
+      background-image: url(./img/balance/checkbox-unchecked.png) !important;
+    }
+    input[type="radio"]:checked + span {
+      font-weight: 700;
+      background-image: url(./img/balance/radio-checked.png) !important;
+    }
+  }
+}
+
+.kontakt-element {
+  width: 50%;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  input:placeholder-shown {
+    border-color: #6f6f6f;
   }
 }
 
