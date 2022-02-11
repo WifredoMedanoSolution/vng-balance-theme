@@ -2586,6 +2586,7 @@ div.bal_aktuelles-grid {
             background-size: 30px !important;
           }
           span {
+            margin-left: 30px !important;
             @media (max-width: 992px) {
               margin-left: 10px !important;
             }
@@ -2664,11 +2665,11 @@ div.bal_aktuelles-grid {
           font-size: 20px;
         }
         a {
-          padding: 0px !important;
+          padding: 15px 30px 15px 10px !important;
           color: black !important;
           background-image: url(./img/balance/acordion-close.png) !important;
           background-repeat: no-repeat !important;
-          background-position: right 10px top 10px !important;
+          background-position: right 10px top 20px !important;
           background-size: 20px !important;
           span {
             table {
@@ -2716,6 +2717,34 @@ div.bal_aktuelles-grid {
         }
       }
     }
+  }
+}
+
+.map-button-mobile {
+  margin: 0 auto;
+  border-bottom: solid 1px;
+  padding: 20px 10px;
+  background-image: url(./img/balance/acordion-close.png);
+  background-repeat: no-repeat !important;
+  background-position: right 10px top 25px !important;
+  background-size: 30px !important;
+  font-size: 20px;
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.location-list-container {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.map-mega-container {
+  @media (max-width: 767px) {
+    width: 90%;
+    margin: 20px auto;
   }
 }
 
