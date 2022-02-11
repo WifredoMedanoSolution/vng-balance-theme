@@ -3083,14 +3083,9 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     background-size: 30px !important;
   }
 }
-<<<<<<< HEAD
-=======
-
 .balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 a span {
   margin-left: 30px !important;
 }
-
->>>>>>> dev_wifredo
 @media (max-width: 992px) {
   .balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 a span {
     margin-left: 10px !important;
@@ -3212,6 +3207,36 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 .balance-standorte-accordion .vc_active .vc_tta-panel-heading h4 a {
   color: #7aa62c !important;
   background-image: url(./img/balance/acordion-open.png) !important;
+}
+
+.map-button-mobile {
+  margin: 0 auto;
+  border-bottom: solid 1px;
+  padding: 20px 10px;
+  background-image: url(./img/balance/acordion-close.png);
+  background-repeat: no-repeat !important;
+  background-position: right 10px top 25px !important;
+  background-size: 30px !important;
+  font-size: 20px;
+  display: none;
+}
+@media (max-width: 767px) {
+  .map-button-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .location-list-container {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .map-mega-container {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 
 /* Custom styles Button (Medano Solution) */
@@ -3519,6 +3544,23 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   -moz-transition: display 0.2s linear;
   -ms-transition: display 0.2s linear;
   -o-transition: display 0.2s linear;
+}
+
+/* Custom styles Product rows (Medano Solution) */
+.bal_produkte-section-right {
+  padding-top: 0px !important;
+  overflow: visible;
+}
+.bal_produkte-section-right .bal_produkte-row-right > .bal_produkte-image-column-right {
+  padding-right: 0px !important;
+}
+
+.bal_produkte-section-left {
+  padding-top: 0px !important;
+  overflow: visible;
+}
+.bal_produkte-section-left .bal_produkte-row-left > .bal_produkte-image-column-left {
+  padding-left: 0px !important;
 }
 
 /* Custom styles Product Card (Medano Solution) */

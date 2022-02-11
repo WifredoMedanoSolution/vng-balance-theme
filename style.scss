@@ -3096,6 +3096,27 @@ div.bal_aktuelles-grid {
   }
 }
 
+/* Custom styles Product rows (Medano Solution) */
+.bal_produkte-section-right {
+  padding-top: 0px !important;
+  overflow: visible;
+  .bal_produkte-row-right {
+    & > .bal_produkte-image-column-right {
+      padding-right: 0px !important;
+    }
+  }
+}
+
+.bal_produkte-section-left {
+  padding-top: 0px !important;
+  overflow: visible;
+  .bal_produkte-row-left {
+    & > .bal_produkte-image-column-left {
+      padding-left: 0px !important;
+    }
+  }
+}
+
 /* Custom styles Product Card (Medano Solution) */
 .balance-card {
   border-radius: 0px 24px 0px 0px;
