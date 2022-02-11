@@ -358,6 +358,27 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  /* Map button mobile script */
+  $(document).ready(function () {
+    $(".map-button-mobile").on("click", function () {
+      if ($(".location-list-container").css("display") == "none") {
+        $(".location-list-container").css("display", "block");
+		$(".map-mega-container").css("box-shadow", "0px 0px 10px 0px #000000");
+		$(".map-mega-container").css("background-color", "#ffffff");
+		$(".map-button-mobile").css("border-color", "#7aa62c");
+		$(".map-button-mobile").css("color", "#7aa62c");
+		$(".map-button-mobile").css("background-image", "url(https://bal.vng.aliado.rocks/wp-content/themes/balance/img/balance/acordion-open.png)");
+      } else {
+        $(".location-list-container").css("display", "none");
+		$(".map-mega-container").css("box-shadow", "none");
+		$(".map-mega-container").css("background-color", "transparent");
+		$(".map-button-mobile").css("border-color", "#000000");
+		$(".map-button-mobile").css("color", "#000000");
+		$(".map-button-mobile").css("background-image", "url(https://bal.vng.aliado.rocks/wp-content/themes/balance/img/balance/acordion-close.png)");
+      }
+    });
+  });
+
   /* Kontakt page script */
   $(document).ready(function () {
     $(".kontakt-element")

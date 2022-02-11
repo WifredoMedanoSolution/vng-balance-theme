@@ -3083,6 +3083,14 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     background-size: 30px !important;
   }
 }
+<<<<<<< HEAD
+=======
+
+.balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 a span {
+  margin-left: 30px !important;
+}
+
+>>>>>>> dev_wifredo
 @media (max-width: 992px) {
   .balance-accordion .vc_tta-panel .vc_tta-panel-heading h4 a span {
     margin-left: 10px !important;
@@ -3155,11 +3163,11 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   }
 }
 .balance-standorte-accordion .balance-map-header .vc_tta-panel-heading h4 a {
-  padding: 0px !important;
+  padding: 15px 30px 15px 10px !important;
   color: black !important;
   background-image: url(./img/balance/acordion-close.png) !important;
   background-repeat: no-repeat !important;
-  background-position: right 10px top 10px !important;
+  background-position: right 10px top 20px !important;
   background-size: 20px !important;
 }
 .balance-standorte-accordion .balance-map-header .vc_tta-panel-heading h4 a span table tr .bal-col-1 {
