@@ -3233,6 +3233,24 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   }
 }
 
+.balance-h2-kontakt h2 {
+  font-size: 50px;
+  color: #7aa62c;
+  font-weight: 700;
+}
+
+@media (max-width: 1400px) {
+  .balance-h2-kontakt h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .balance-h2-kontakt h2 {
+    font-size: 30px;
+  }
+}
+
 .balance-h3 h3 {
   color: #7aa62c;
 }
@@ -3540,6 +3558,161 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 #balance-button-download .vc_btn3:hover {
   background-image: url(./img/balance/button-white-download.png) !important;
+}
+
+.balance-kontakt-button {
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 20px !important;
+  height: 55px;
+  border: solid !important;
+  border-width: 2px !important;
+  border-color: #ffcc00 !important;
+  border-radius: 100px !important;
+  font-weight: 600;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  padding-right: 60px !important;
+  text-align: center !important;
+  background-repeat: no-repeat !important;
+  background-position: right -2px top !important;
+  background-size: 52px 52px !important;
+  background-image: url(./img/balance/button-yellow.png) !important;
+}
+
+.balance-kontakt-button:hover {
+  background-color: #afca0b !important;
+  border-width: 2px !important;
+  border-color: #afca0b !important;
+  color: #ffffff !important;
+  background-image: url(./img/balance/button-white.png) !important;
+}
+
+/* Custom styles Kontakt Page (Medano Solution) */
+.balance-kontakt-privacy-policy {
+  padding-right: 20px;
+}
+
+.balance-kontakt-privacy-policy input[type="checkbox"] + span {
+  padding-left: 30px;
+  margin-left: -16px;
+  background-repeat: no-repeat !important;
+  background-position: left 0px top 0px !important;
+  background-size: 17px !important;
+  line-height: 0;
+  background-image: url(./img/balance/checkbox-unchecked.png) !important;
+}
+
+.balance-kontakt-privacy-policy input[type="checkbox"]:checked + span {
+  background-image: url(./img/balance/checkbox-checked.png) !important;
+}
+
+.balance-kontakt-privacy-policy label input {
+  opacity: 0;
+}
+
+.balance-kontakt-privacy-policy label .wpcf7-list-item-label {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: #6f6f6f;
+}
+
+@media (max-width: 1400px) {
+  .balance-kontakt-privacy-policy label .wpcf7-list-item-label {
+    font-size: 14px !important;
+  }
+}
+
+.kontakt-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .kontakt-row {
+    display: initial;
+    margin-bottom: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+}
+
+.kontakt-label {
+  margin-left: 10px;
+}
+
+.kontakt-label-hidden {
+  display: none;
+}
+
+.kontakt-label-textarea {
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"] {
+  border: solid;
+  border-width: 0 0 2px;
+  border-color: #7aa62c;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.wpcf7-form textarea {
+  border: solid;
+  border-width: 2px;
+  border-color: #6f6f6f;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.wpcf7-form textarea:hover {
+  border-color: #7aa62c;
+}
+
+.label-anrede {
+  font-weight: 700;
+}
+
+.kontakt-radio .wpcf7-list-item input[type="radio"] {
+  opacity: 0;
+}
+
+.kontakt-radio .wpcf7-list-item input[type="radio"] + span {
+  padding-left: 20px;
+  margin-left: -16px;
+  background-repeat: no-repeat !important;
+  background-position: left 0px top 0px !important;
+  background-size: 19px !important;
+  background-image: url(./img/balance/checkbox-unchecked.png) !important;
+}
+
+.kontakt-radio .wpcf7-list-item input[type="radio"]:checked + span {
+  font-weight: 700;
+  background-image: url(./img/balance/radio-checked.png) !important;
+}
+
+.kontakt-element {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .kontakt-element {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.kontakt-element input:placeholder-shown {
+  border-color: #6f6f6f;
 }
 
 /* Custom styles Header (Medano Solution) */
