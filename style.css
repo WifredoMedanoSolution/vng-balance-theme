@@ -651,9 +651,6 @@ header .header-fix #logo .logo a img {
     max-width: 174px;
   }
 }
-header .header-fix.scrolled {
-  border-bottom-color: #dee2e6 !important;
-}
 header .header-fix.scrolled #logo .logo a img {
   max-width: 170px;
 }
