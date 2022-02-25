@@ -407,7 +407,7 @@ body {
 
 h1 {
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: -1px;
   margin-bottom: 20px;
@@ -431,7 +431,7 @@ h1 {
 
 h2 {
   font-size: 70px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   letter-spacing: -1px;
   margin-bottom: 20px;
@@ -449,7 +449,7 @@ h2 {
 
 h3 {
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 30px;
   margin-bottom: 20px;
 }
@@ -491,7 +491,7 @@ h4 {
 
 h5 {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 20px;
 }
@@ -3000,6 +3000,9 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   right: -350px;
   z-index: -110;
 }
+.balance-background-circle-dots.balance-circle-dots-over {
+  z-index: 0;
+}
 
 .balance-product-detail-image {
   position: absolute;
@@ -3769,6 +3772,124 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   margin-top: 50px;
 }
 
+/* Custom styles Über uns (Medano Solution) */
+.balance-ueber-uns .balance-h1 {
+  font-size: 100px;
+  color: white;
+}
+.balance-ueber-uns .balance-background-circle-dots {
+  top: -200px;
+  right: -480px;
+}
+.balance-ueber-uns.bal_icons-chain h2 {
+  color: #ffcc00;
+  font-size: 80px;
+}
+.balance-ueber-uns.bal_icons-chain img {
+  width: 100%;
+  z-index: 9;
+}
+.balance-ueber-uns.bal_icons-chain .bal_chain {
+  display: flex;
+  justify-content: center;
+}
+.balance-ueber-uns.bal_icons-chain .bal_chain > .bal_chain-line {
+  position: absolute;
+  top: 100px;
+  height: 400px;
+  width: 3px;
+  background-color: #ffcc00;
+  z-index: -1;
+}
+.balance-ueber-uns.bal_leitbild-section {
+  height: 721px;
+}
+.balance-ueber-uns.bal_leitbild-section .balance-h2-leitbild {
+  color: white;
+}
+.balance-ueber-uns.bal_leitbild-section p {
+  color: white;
+  font-weight: 300;
+}
+.balance-ueber-uns.bal_leitbild-section .balance-button button {
+  background-color: transparent !important;
+  color: white !important;
+  font-weight: 300 !important;
+}
+.balance-ueber-uns.bal_leitbild-section .balance-button button:hover {
+  background-color: #afca0b !important;
+}
+
+@media (max-width: 767px) {
+  section.balance-ueber-uns {
+    padding: 10px 35px !important;
+    margin-top: 0px !important;
+  }
+  section.balance-ueber-uns .vc_row.wpb_row {
+    margin-bottom: 25px !important;
+  }
+  section.balance-ueber-uns.bal_video-background {
+    margin-bottom: -30px !important;
+    background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/1054417679-preview_PosterImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 620px;
+  }
+  section.balance-ueber-uns.bal_video-background .vc_row.wpb_row {
+    padding-top: 200px !important;
+    padding-bottom: 0px !important;
+  }
+  section.balance-ueber-uns.bal_arc-decoration {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 65px !important;
+  }
+  section.balance-ueber-uns.bal_arc-decoration .vc_column-inner {
+    padding: 0px !important;
+  }
+  section.balance-ueber-uns.bal_icons-chain .balance-icons-chain-title .vc_column-inner {
+    margin-bottom: 35px !important;
+  }
+  section.balance-ueber-uns.bal_icons-chain .balance-icons-chain-title .vc_column-inner h2 {
+    font-size: 50px;
+    text-align: left !important;
+  }
+  section.balance-ueber-uns.bal_icons-chain .wpb_single_image.vc_align_center {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  section.balance-ueber-uns.bal_icons-chain div.bal_icons-chain-left {
+    flex-direction: column-reverse !important;
+  }
+  section.balance-ueber-uns.bal_icons-chain div.bal_icons-chain-last img {
+    margin-bottom: 35px;
+  }
+  section.balance-ueber-uns.bal_icons-chain h3,
+section.balance-ueber-uns.bal_icons-chain p {
+    text-align: left !important;
+  }
+  section.balance-ueber-uns.bal_icons-chain img {
+    width: 100px;
+    height: 100px;
+    z-index: 9;
+  }
+  section.balance-ueber-uns.bal_icons-chain .bal_chain > .bal_chain-line {
+    position: absolute;
+    top: 0px;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    z-index: -1;
+  }
+  section.balance-ueber-uns.bal_leitbild-section {
+    background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/VNG_Biogasanlage_Oschatz_0088_HighRes_edited-1024x531-2.png) !important;
+    height: 600px;
+    margin-bottom: 60px !important;
+  }
+  section.balance-ueber-uns.bal_unser {
+    margin-bottom: 60px !important;
+  }
+}
 /* Custom styles Footer (Medano Solution) */
 .balance-footer-section {
   padding-top: 180px;

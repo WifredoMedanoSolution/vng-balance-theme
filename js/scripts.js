@@ -363,18 +363,24 @@ jQuery(document).ready(function ($) {
     $(".map-button-mobile").on("click", function () {
       if ($(".location-list-container").css("display") == "none") {
         $(".location-list-container").css("display", "block");
-		$(".map-mega-container").css("box-shadow", "0px 0px 10px 0px #000000");
-		$(".map-mega-container").css("background-color", "#ffffff");
-		$(".map-button-mobile").css("border-color", "#7aa62c");
-		$(".map-button-mobile").css("color", "#7aa62c");
-		$(".map-button-mobile").css("background-image", "url(/wp-content/themes/balance/img/balance/acordion-open.png)");
+        $(".map-mega-container").css("box-shadow", "0px 0px 10px 0px #000000");
+        $(".map-mega-container").css("background-color", "#ffffff");
+        $(".map-button-mobile").css("border-color", "#7aa62c");
+        $(".map-button-mobile").css("color", "#7aa62c");
+        $(".map-button-mobile").css(
+          "background-image",
+          "url(/wp-content/themes/balance/img/balance/acordion-open.png)"
+        );
       } else {
         $(".location-list-container").css("display", "none");
-		$(".map-mega-container").css("box-shadow", "none");
-		$(".map-mega-container").css("background-color", "transparent");
-		$(".map-button-mobile").css("border-color", "#000000");
-		$(".map-button-mobile").css("color", "#000000");
-		$(".map-button-mobile").css("background-image", "url(/wp-content/themes/balance/img/balance/acordion-close.png)");
+        $(".map-mega-container").css("box-shadow", "none");
+        $(".map-mega-container").css("background-color", "transparent");
+        $(".map-button-mobile").css("border-color", "#000000");
+        $(".map-button-mobile").css("color", "#000000");
+        $(".map-button-mobile").css(
+          "background-image",
+          "url(/wp-content/themes/balance/img/balance/acordion-close.png)"
+        );
       }
     });
   });
@@ -415,4 +421,18 @@ jQuery(document).ready(function ($) {
       }
     });
   });
+
+  /* Uber uns Icons chain color invert on Scroll */
+//   let altImage = $(".bal_chain-icon img")[0].clone();
+/*
+  $(window).scroll(function () {
+    var divTopOffset = $(".bal_chain-icon").offset().top,
+      divOutherHeight = $(".bal_chain-icon").outerHeight(),
+      windowHeight = $(window).height(),
+      windowScroll = $(this).scrollTop();
+    if (windowScroll > divTopOffset + divOutherHeight - windowHeight) {
+      console.log("Scroll to chain icon div");
+    }
+  });
+  */
 });
