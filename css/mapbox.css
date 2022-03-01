@@ -105,8 +105,8 @@
   background-image: url(../img/balance/map-marker.png);
   background-size: contain;
   background-repeat: no-repeat !important;
-  width: 40px;
-  height: 32px;
+  width: 30px;
+  height: 24px;
   cursor: pointer;
 }
 
@@ -116,6 +116,7 @@
 }
 
 #map .mapboxgl-popup-content {
+  font-size: 16px !important;
   min-width: 400px;
 }
 

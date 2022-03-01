@@ -19,7 +19,7 @@
 								<table>
 									<tbody>
 										<tr>
-											<td style="width: 15%;"><img src="<?php echo get_template_directory_uri(); ?>/img/balance/phone.png" width="20" height="20" alt="phone" title="phone"></td>
+											<td class="footer-first-row"><img src="<?php echo get_template_directory_uri(); ?>/img/balance/phone.png" width="20" height="20" alt="phone" title="phone"></td>
 											<td>0341 443 2968</td>
 										</tr>
 										<tr>
