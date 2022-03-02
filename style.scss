@@ -2004,6 +2004,7 @@ footer {
           border-color: #afca0b !important;
           color: #ffffff !important;
           background-image: url(./img/balance/button-white-download.png) !important;
+          transition: 1s;
         }
 
         &.bal_download-pressebild {
@@ -2129,6 +2130,7 @@ footer {
             border-color: #afca0b !important;
             color: #ffffff !important;
             background-image: url(./img/balance/button-white-download.png) !important;
+            transition: 1s;
           }
 
           &.bal_download-pressebild {
@@ -2237,6 +2239,7 @@ div.bal_aktuelles-grid {
           border-color: #afca0b !important;
           color: #ffffff !important;
           background-image: url(./img/balance/button-white.png) !important;
+          transition: 1s;
         }
       }
     }
@@ -2312,6 +2315,7 @@ div.bal_aktuelles-grid {
             border-color: #afca0b !important;
             color: #ffffff !important;
             background-image: url(./img/balance/button-white.png) !important;
+            transition: 1s;
           }
         }
       }
@@ -2370,6 +2374,7 @@ div.bal_aktuelles-grid {
     }
   }
   .amazingslider-img-1 {
+    animation: fadeIn 3s;
     img {
       top: auto !important;
       bottom: 0 !important;
@@ -2433,6 +2438,7 @@ div.bal_aktuelles-grid {
         &:hover {
           color: #afca0b;
           background-image: url(./img/balance/button-green.png) !important;
+          transition: 1s;
         }
       }
       .as-btn-orangeborder-large {
@@ -2445,6 +2451,7 @@ div.bal_aktuelles-grid {
           border-color: #afca0b !important;
           background-color: #afca0b !important;
           background-image: url(./img/balance/button-white.png) !important;
+          transition: 1s;
         }
       }
     }
@@ -2477,6 +2484,15 @@ div.bal_aktuelles-grid {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .balance-home-section-2 {
   padding-top: 300px !important;
   margin-top: -320px !important;
@@ -2500,6 +2516,11 @@ div.bal_aktuelles-grid {
   font-size: 38px;
   line-height: 60px;
   padding: 0px 80px;
+  & > div {
+    & > p {
+      font-family: $light !important;
+    }
+  }
   @media (max-width: $bp_laptop) {
     font-size: 24px;
     line-height: 2rem;
@@ -2514,6 +2535,9 @@ div.bal_aktuelles-grid {
     color: #7aa62c;
     font-family: $light;
     line-height: 80px;
+    @media (max-width: $bp_laptop) {
+      line-height: 50px;
+    }
   }
 }
 
@@ -2562,6 +2586,7 @@ div.bal_aktuelles-grid {
 
 .balance-h3 {
   h3 {
+    font-family: $light;
     color: #7aa62c;
     @media (max-width: $bp_laptop) {
       font-size: 24px;
@@ -2602,7 +2627,7 @@ div.bal_aktuelles-grid {
     width: 200px;
   }
   @media (max-width: 900px) {
-    width: auto;
+    width: 50%;
   }
 }
 
@@ -2817,6 +2842,12 @@ div.bal_aktuelles-grid {
   }
 }
 
+.mapbox-teaser-text {
+  p {
+    font-size: 24px !important;
+  }
+}
+
 .location-list-container {
   @media (max-width: 767px) {
     display: none;
@@ -2868,12 +2899,15 @@ div.bal_aktuelles-grid {
     border-color: #afca0b !important;
     color: #ffffff !important;
     background-image: url(./img/balance/button-white.png) !important;
+    transition: 1s;
   }
 }
 
 /* Custom styles Button (Medano Solution) */
+
 .balance-button {
   .vc_btn3 {
+    position: relative;
     font-family: $light;
     border-width: 2px !important;
     border-color: #ffcc00 !important;
@@ -2887,8 +2921,6 @@ div.bal_aktuelles-grid {
     background-position: right -2px top !important;
     background-size: 52px 52px !important;
     background-image: url(./img/balance/button-yellow.png) !important;
-      animation-name: slidebg;
-      animation-duration: 4s;
     @media (max-width: 400px) {
       padding-right: 60px !important;
       font-size: 14px !important;
@@ -2900,19 +2932,8 @@ div.bal_aktuelles-grid {
       border-color: #afca0b !important;
       color: #ffffff !important;
       background-image: url(./img/balance/button-white.png) !important;
+      transition: 1s;
     }
-  }
-}
-
-@keyframes slidebg {
-  0% {
-    background-position: right -2px top !important;
-  }
-  50% {
-    background-position: right 10px top !important;
-  }
-  100% {
-    background-position: right -2px top !important;
   }
 }
 
@@ -2921,6 +2942,7 @@ div.bal_aktuelles-grid {
     background-image: url(./img/balance/button-yellow-download.png) !important;
     &:hover {
       background-image: url(./img/balance/button-white-download.png) !important;
+      transition: 1s;
     }
   }
 }
@@ -3536,9 +3558,9 @@ div.bal_aktuelles-grid {
   .balance-background-circle-dots {
     top: -200px;
     right: -480px;
-	@media (max-width: $bp_mobile) {
-	  display: none;
-	}
+    @media (max-width: $bp_mobile) {
+      display: none;
+    }
   }
 
   &.bal_icons-chain {
@@ -3603,11 +3625,11 @@ div.bal_aktuelles-grid {
     }
 
     &.bal_video-background {
-      background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/1054417679-preview_PosterImage.png);
+      //background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/1054417679-preview_PosterImage.png);
       background-size: cover;
       background-repeat: no-repeat;
       height: 620px;
-	  padding: 0px !important;
+      padding: 0px !important;
       .vc_row.wpb_row {
         padding-top: 100px !important;
         padding-bottom: 100px !important;
@@ -3672,7 +3694,7 @@ div.bal_aktuelles-grid {
     }
 
     &.bal_leitbild-section {
-      background-image: url(./img/balance/VNG_Biogasanlage_Oschatz_0088_HighRes_edited-1024x531-2.png) !important;
+      //background-image: url(./img/balance/VNG_Biogasanlage_Oschatz_0088_HighRes_edited-1024x531-2.png) !important;
       height: 600px;
       margin-bottom: 60px !important;
     }
@@ -3695,7 +3717,7 @@ div.bal_aktuelles-grid {
   }
   @media (max-width: 767px) {
     margin-top: -140px !important;
-	padding: 150px 50px 50px 50px !important;
+    padding: 150px 50px 50px 50px !important;
   }
 }
 

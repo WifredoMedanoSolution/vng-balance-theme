@@ -2773,6 +2773,8 @@ footer .copyright a {
   border-color: #afca0b !important;
   color: #ffffff !important;
   background-image: url(./img/balance/button-white-download.png) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .single-news .single-news-wrapper .single-news-download a.bal_download-pressebild {
@@ -2895,6 +2897,8 @@ footer .copyright a {
     border-color: #afca0b !important;
     color: #ffffff !important;
     background-image: url(./img/balance/button-white-download.png) !important;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .single-news .single-news-wrapper .single-news-download a.bal_download-pressebild {
     margin-left: 0;
@@ -2986,6 +2990,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   border-color: #afca0b !important;
   color: #ffffff !important;
   background-image: url(./img/balance/button-white.png) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media (max-width: 767px) {
@@ -3044,6 +3050,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     border-color: #afca0b !important;
     color: #ffffff !important;
     background-image: url(./img/balance/button-white.png) !important;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 
@@ -3103,6 +3111,11 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   margin-right: 18px !important;
   width: 24px !important;
   height: 24px !important;
+}
+
+#wonderpluginslider-1 .amazingslider-img-1 {
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
 }
 
 #wonderpluginslider-1 .amazingslider-img-1 img {
@@ -3202,6 +3215,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 #wonderpluginslider-1 .amazingslider-text-1 .amazingslider-button-1 .as-btn-whiteborder-large:hover {
   color: #afca0b;
   background-image: url(./img/balance/button-green.png) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #wonderpluginslider-1 .amazingslider-text-1 .amazingslider-button-1 .as-btn-orangeborder-large {
@@ -3216,6 +3231,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   border-color: #afca0b !important;
   background-color: #afca0b !important;
   background-image: url(./img/balance/button-white.png) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #wonderpluginslider-1 .amazingslider-text-1 .amazingslider-title-1 {
@@ -3256,6 +3273,15 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   font-family: Fira Sans Light, sans-serif;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .balance-home-section-2 {
   padding-top: 300px !important;
   margin-top: -320px !important;
@@ -3287,6 +3313,10 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   padding: 0px 80px;
 }
 
+.balance-large-text > div > p {
+  font-family: Fira Sans Light, sans-serif !important;
+}
+
 @media (max-width: 1400px) {
   .balance-large-text {
     font-size: 24px;
@@ -3304,6 +3334,12 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   color: #7aa62c;
   font-family: Fira Sans Light, sans-serif;
   line-height: 80px;
+}
+
+@media (max-width: 1400px) {
+  .balance-h2 h2 {
+    line-height: 50px;
+  }
 }
 
 .balance-h2-black > div > h2 {
@@ -3348,6 +3384,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 
 .balance-h3 h3 {
+  font-family: Fira Sans Light, sans-serif;
   color: #7aa62c;
 }
 
@@ -3403,7 +3440,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 @media (max-width: 900px) {
   .balance-product-detail-image {
-    width: auto;
+    width: 50%;
   }
 }
 
@@ -3654,6 +3691,10 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   }
 }
 
+.mapbox-teaser-text p {
+  font-size: 24px !important;
+}
+
 @media (max-width: 767px) {
   .location-list-container {
     display: none;
@@ -3711,10 +3752,13 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   border-color: #afca0b !important;
   color: #ffffff !important;
   background-image: url(./img/balance/button-white.png) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /* Custom styles Button (Medano Solution) */
 .balance-button .vc_btn3 {
+  position: relative;
   font-family: Fira Sans Light, sans-serif;
   border-width: 2px !important;
   border-color: #ffcc00 !important;
@@ -3728,10 +3772,6 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   background-position: right -2px top !important;
   background-size: 52px 52px !important;
   background-image: url(./img/balance/button-yellow.png) !important;
-  -webkit-animation-name: slidebg;
-          animation-name: slidebg;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 @media (max-width: 400px) {
@@ -3748,30 +3788,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   border-color: #afca0b !important;
   color: #ffffff !important;
   background-image: url(./img/balance/button-white.png) !important;
-}
-
-@-webkit-keyframes slidebg {
-  0% {
-    background-position: right -2px top !important;
-  }
-  50% {
-    background-position: right 10px top !important;
-  }
-  100% {
-    background-position: right -2px top !important;
-  }
-}
-
-@keyframes slidebg {
-  0% {
-    background-position: right -2px top !important;
-  }
-  50% {
-    background-position: right 10px top !important;
-  }
-  100% {
-    background-position: right -2px top !important;
-  }
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #balance-button-download .vc_btn3 {
@@ -3780,6 +3798,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 #balance-button-download .vc_btn3:hover {
   background-image: url(./img/balance/button-white-download.png) !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .balance-kontakt-button {
@@ -4534,7 +4554,6 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     margin-bottom: 25px !important;
   }
   section.balance-ueber-uns.bal_video-background {
-    background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/1054417679-preview_PosterImage.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 620px;
@@ -4590,7 +4609,6 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     z-index: -1;
   }
   section.balance-ueber-uns.bal_leitbild-section {
-    background-image: url(./img/balance/VNG_Biogasanlage_Oschatz_0088_HighRes_edited-1024x531-2.png) !important;
     height: 600px;
     margin-bottom: 60px !important;
   }

@@ -158,65 +158,87 @@ add_filter('wp_check_filetype_and_ext', 'kb_ignore_upload_ext', 10, 4);
 class WPBakeryShortCode_zweiklick_youtube_video extends WPBakeryShortCode
 {
 
-	protected function content($atts, $content = null)
-	{
-		extract(shortcode_atts(array(
-			'video_url' => '',
-			'container_height' => '400',
-			'dsgvo_img' => '4673',
-		), $atts));
+    protected function content($atts, $content = null)
+    {
+        extract(shortcode_atts(array(
+            'video_url' => '',
+            'container_height' => '400',
+            'dsgvo_img' => '4673',
+        ), $atts));
 
-		parse_str(parse_url($video_url, PHP_URL_QUERY), $my_array_of_vars);
-		$video_id = $my_array_of_vars['v'];
+        parse_str(parse_url($video_url, PHP_URL_QUERY), $my_array_of_vars);
+        $video_id = $my_array_of_vars['v'];
 
-		$output = '<div class="video_wrapper" style="height:' . $container_height . 'px; background-image: url(' . wp_get_attachment_image_src($dsgvo_img, 'full')[0] . ');">';
-		$output .= '<div class="video_trigger" data-source="' . $video_id . '">';
-		$output .= '<p class="text-center">';
-		$output .= wpb_js_remove_wpautop($content, true);
-		$output .= '</p>';
-		$output .= '<div class="button-container">';
-		$output .= '<input type="button" class="button-inner" value="Akzeptieren" />';
-		$output .= '</div>';
-		$output .= '</div>';
-		$output .= '<div class="video_layer"><iframe src="" border="0"></iframe></div>';
-		$output .= '</div>';
+        $output = '<div class="video_wrapper" style="height:' . $container_height . 'px; background-image: url(' . wp_get_attachment_image_src($dsgvo_img, 'full')[0] . ');">';
+        $output .= '<div class="video_trigger" data-source="' . $video_id . '">';
+        $output .= '<p class="text-center">';
+        $output .= wpb_js_remove_wpautop($content, true);
+        $output .= '</p>';
+        $output .= '<div class="button-container">';
+        $output .= '<input type="button" class="button-inner" value="Akzeptieren" />';
+        $output .= '</div>';
+        $output .= '</div>';
+        $output .= '<div class="video_layer"><iframe src="" border="0"></iframe></div>';
+        $output .= '</div>';
 
 
-		return $output;
-	}
+        return $output;
+    }
 }
 
 vc_map(array(
-	'base' => 'zweiklick_youtube_video',
-	'name' => 'Zwei-Klick Youtube Video',
-	'content_element' => true,
-	'icon' => 'zweiklick_youtube_video',
-	"show_settings_on_create" => true,
-	"params" => array(
-		array(
-			"type" => "textfield",
-			"heading" => "Video URL",
-			"param_name" => "video_url",
-			"holder" => "h1",
-		),
-		array(
-			"type" => "textfield",
-			"heading" => "Höhe",
-			"param_name" => "container_height",
-			"holder" => "div",
-		),
-		array(
-			"type" => "textarea_html",
-			"heading" => "Hinweistext",
-			"param_name" => "content",
-			"holder" => "div",
-			"value" => "Mit dem Aufruf des Videos erklären Sie sich einverstanden, dass Ihre Daten an YouTube übermittelt werden und das Sie die <a href=\"/datenschutz\" target=\"_blank\">Datenschutzerklärung</a> gelesen haben.",
-		),
-		array(
-			"type" => "attach_image",
-			"heading" => "Placeholder Image",
-			"param_name" => "dsgvo_img",
-			"holder" => "img",
-		)
-	)
+    'base' => 'zweiklick_youtube_video',
+    'name' => 'Zwei-Klick Youtube Video',
+    'content_element' => true,
+    'icon' => 'zweiklick_youtube_video',
+    "show_settings_on_create" => true,
+    "params" => array(
+        array(
+            "type" => "textfield",
+            "heading" => "Video URL",
+            "param_name" => "video_url",
+            "holder" => "h1",
+        ),
+        array(
+            "type" => "textfield",
+            "heading" => "Höhe",
+            "param_name" => "container_height",
+            "holder" => "div",
+        ),
+        array(
+            "type" => "textarea_html",
+            "heading" => "Hinweistext",
+            "param_name" => "content",
+            "holder" => "div",
+            "value" => "Zum Abspielen dieses YouTube-Videos auf unserer Webseite müssen Sie zustimmen. Wir möchten Sie darauf hinweisen, dass durch den Start des YouTube-Videos Daten an YouTube übermittelt werden. Weitere Informationen erhalten Sie in unsere <a href='/datenschutz' target='_blank'>Datenschutzerklärung</a>",
+        ),
+        array(
+            "type" => "attach_image",
+            "heading" => "Placeholder Image",
+            "param_name" => "dsgvo_img",
+            "holder" => "img",
+        )
+    )
 ));
+
+// If Dynamic Sidebar Exists
+function sidebar()
+{    // Define Sidebar Widget Area 1
+    register_sidebar(
+        array(
+            'name' => __('Language-Switcher', 'html5blank'),
+            'description' => __('Language-Switcher', 'html5blank'),
+            'id' => 'nav-language-switcher',
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>'
+        )
+    );
+}
+
+add_action('widgets_init', 'sidebar');
+
+
+require_once 'lib/NewsPostType.php';
+new NewsPostType();
