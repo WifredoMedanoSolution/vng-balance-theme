@@ -1,0 +1,35 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<title>BALANCE_Icons_UeberUns_Sonne_weiss-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4.7 } 
+	</style>
+	<g id="Icon_feather-sun">
+		<g id="Pfad_2660">
+			<path id="Layer" class="s0" d="m70 50c0 8.1-4.9 15.4-12.3 18.5c-7.5 3.1-16.1 1.4-21.8-4.4c-5.8-5.7-7.5-14.3-4.4-21.8c3.1-7.4 10.4-12.3 18.5-12.3c2.6 0 5.2 0.5 7.7 1.5c2.4 1 4.6 2.5 6.4 4.4c1.9 1.8 3.4 4 4.4 6.4c1 2.5 1.5 5.1 1.5 7.7z" />
+		</g>
+		<g id="Pfad_2661">
+			<path id="Layer" class="s0" d="m50 6.1v8" />
+		</g>
+		<g id="Pfad_2662">
+			<path id="Layer" class="s0" d="m50 85.9v8" />
+		</g>
+		<g id="Pfad_2663">
+			<path id="Layer" class="s0" d="m18.9 18.9l5.7 5.7" />
+		</g>
+		<g id="Pfad_2664">
+			<path id="Layer" class="s0" d="m75.4 75.4l5.7 5.7" />
+		</g>
+		<g id="Pfad_2665">
+			<path id="Layer" class="s0" d="m6.1 50h8" />
+		</g>
+		<g id="Pfad_2666">
+			<path id="Layer" class="s0" d="m85.9 50h8" />
+		</g>
+		<g id="Pfad_2667">
+			<path id="Layer" class="s0" d="m18.9 81.1l5.7-5.7" />
+		</g>
+		<g id="Pfad_2668">
+			<path id="Layer" class="s0" d="m75.4 24.6l5.7-5.7" />
+		</g>
+	</g>
+</svg>

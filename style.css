@@ -2997,12 +2997,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     margin-bottom: 0;
   }
   .balance-h1 div.wpb_wrapper h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Fira Sans Light";
-  }
-  .balance-background-circle-dots .vc_single_image-img {
-    width: 80%;
-    margin-left: 50vw;
   }
   div.bal_aktuelles-grid .bal_aktuelles-section.vc_gitem-zone div.bal_aktuelles-wrapper div.bal_aktuelles-post-date.bal_aktuelles-date div {
     font-size: 18px;
@@ -3732,6 +3728,10 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   background-position: right -2px top !important;
   background-size: 52px 52px !important;
   background-image: url(./img/balance/button-yellow.png) !important;
+  -webkit-animation-name: slidebg;
+          animation-name: slidebg;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @media (max-width: 400px) {
@@ -3748,6 +3748,30 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   border-color: #afca0b !important;
   color: #ffffff !important;
   background-image: url(./img/balance/button-white.png) !important;
+}
+
+@-webkit-keyframes slidebg {
+  0% {
+    background-position: right -2px top !important;
+  }
+  50% {
+    background-position: right 10px top !important;
+  }
+  100% {
+    background-position: right -2px top !important;
+  }
+}
+
+@keyframes slidebg {
+  0% {
+    background-position: right -2px top !important;
+  }
+  50% {
+    background-position: right 10px top !important;
+  }
+  100% {
+    background-position: right -2px top !important;
+  }
 }
 
 #balance-button-download .vc_btn3 {
@@ -4443,6 +4467,12 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   right: -480px;
 }
 
+@media (max-width: 767px) {
+  .balance-ueber-uns .balance-background-circle-dots {
+    display: none;
+  }
+}
+
 .balance-ueber-uns.bal_icons-chain h2 {
   font-family: Fira Sans Light, sans-serif;
   color: #ffcc00;
@@ -4466,7 +4496,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 .balance-ueber-uns.bal_icons-chain .bal_chain > .bal_chain-line {
   position: absolute;
   top: 100px;
-  height: 400px;
+  height: 300px;
   width: 3px;
   background-color: #ffcc00;
   z-index: -1;
@@ -4504,15 +4534,15 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     margin-bottom: 25px !important;
   }
   section.balance-ueber-uns.bal_video-background {
-    margin-bottom: -30px !important;
     background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/1054417679-preview_PosterImage.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 620px;
+    padding: 0px !important;
   }
   section.balance-ueber-uns.bal_video-background .vc_row.wpb_row {
-    padding-top: 200px !important;
-    padding-bottom: 0px !important;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
   }
   section.balance-ueber-uns.bal_arc-decoration {
     background-size: contain;
@@ -4560,7 +4590,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     z-index: -1;
   }
   section.balance-ueber-uns.bal_leitbild-section {
-    background-image: url(https://bal.vng.aliado.rocks/wp-content/uploads/sites/7/2022/02/VNG_Biogasanlage_Oschatz_0088_HighRes_edited-1024x531-2.png) !important;
+    background-image: url(./img/balance/VNG_Biogasanlage_Oschatz_0088_HighRes_edited-1024x531-2.png) !important;
     height: 600px;
     margin-bottom: 60px !important;
   }
@@ -4589,8 +4619,156 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 @media (max-width: 767px) {
   .bal_arc-decoration {
-    margin-top: -40px !important;
+    margin-top: -140px !important;
+    padding: 150px 50px 50px 50px !important;
   }
+}
+
+.bal_circle_1 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_1_color {
+  background-image: url(./img/balance/ueber-white-1.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.bal_circle_2 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_2_color {
+  background-image: url(./img/balance/ueber-white-2.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.bal_circle_3 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_3_color {
+  background-image: url(./img/balance/ueber-white-3.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.bal_circle_4 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_4_color {
+  background-image: url(./img/balance/ueber-white-4.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.bal_circle_5 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_5_color {
+  background-image: url(./img/balance/ueber-white-5.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.bal_circle_6 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_6_color {
+  background-image: url(./img/balance/ueber-white-6.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.bal_circle_7 {
+  height: 180px;
+  width: 180px;
+  border: solid;
+  border-radius: 100px;
+  border-color: #ffcc00;
+  background-color: white;
+  margin: 0 auto;
+  background-image: url(./img/balance/ueber-7.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bal_circle_7_color {
+  background-image: url(./img/balance/ueber-white-7.svg) !important;
+  border-color: #7aa62c !important;
+  background-color: #7aa62c !important;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 /* Custom styles Footer (Medano Solution) */
