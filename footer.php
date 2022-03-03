@@ -28,7 +28,7 @@
 										</tr>
 										<tr>
 											<td><img src="<?php echo get_template_directory_uri(); ?>/img/balance/mail.png" width="20" height="20" alt="mail" title="mail"></td>
-											<td>contact@balance-vng.de</td>
+											<td><a href="mailto:contact@balance-vng.de">contact@balance-vng.de</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -75,7 +75,7 @@
 										<tr><td><a href="/ems/">EMS</a></td></tr>
 										<tr><td><a href="/impressum/">Impressum</a></td></tr>
 										<tr><td><a href="/datenschutz/">Datenschutz</a></td></tr>
-										<tr><td><a href="#">Informationen nach BImSchV</a></td></tr>
+										<tr><td><a href="/kontakt/">Kontakt</a></td></tr>
 									</tbody>
 								</table>
 							</div>

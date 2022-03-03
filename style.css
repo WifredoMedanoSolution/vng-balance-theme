@@ -551,7 +551,7 @@ header {
 }
 
 header .header-fix {
-  height: 152px;
+  height: 100px;
   background: white;
   border-bottom: solid;
   border-bottom-color: transparent !important;
@@ -3428,19 +3428,9 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 @media (max-width: 1400px) {
   .balance-product-detail-image {
+    top: -90px;
     right: 50%;
-  }
-}
-
-@media (max-width: 1250px) {
-  .balance-product-detail-image {
     width: 200px;
-  }
-}
-
-@media (max-width: 900px) {
-  .balance-product-detail-image {
-    width: 50%;
   }
 }
 
@@ -3959,7 +3949,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 /* Custom styles Header (Medano Solution) */
 .balance-header-section .balance-header-row figure {
-  margin-top: 30px !important;
+  margin-top: 14px !important;
 }
 
 @media (max-width: 1400px) {
@@ -3969,8 +3959,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 
 .balance-header-section .balance-header-row figure img {
-  width: 360px;
-  height: 89px;
+  width: 280px;
+  height: 70px;
 }
 
 @media (max-width: 1400px) {
@@ -3981,19 +3971,13 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 
 .balance-header-section .balance-header-row .balance-header-menu {
-  margin-top: 56px;
+  margin-top: 30px;
   text-align: right;
 }
 
 @media (max-width: 991px) {
   .balance-header-section .balance-header-row .balance-header-menu {
     display: none;
-  }
-}
-
-@media (max-width: 1400px) {
-  .balance-header-section .balance-header-row .balance-header-menu {
-    margin-top: 30px;
   }
 }
 
@@ -4011,7 +3995,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 .balance-header-section .balance-header-row .balance-header-menu ul li a {
   color: black;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 @media (max-width: 1400px) {
@@ -4027,8 +4011,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 .balance-header-section .balance-header-row .balance-header-menu ul .current_page_item a {
   color: #7aa62c;
-  text-decoration: underline;
   font-weight: 700;
+  border-bottom: solid;
 }
 
 /* Custom styles Hamburger Menu (Medano Solution) */
@@ -4185,8 +4169,9 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     padding-right: 0px;
   }
   .bal_produkte-section-right .bal_produkte-row-right > .bal_produkte-image-column-right .balance-product-detail-image {
-    right: 48%;
-    top: -50px;
+    left: 50px;
+    top: -90px;
+    width: 150px;
   }
   .bal_produkte-section-left .bal_produkte-row-left {
     padding-right: 0px !important;
@@ -4198,13 +4183,15 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     padding-left: 0px;
   }
   .bal_produkte-section-left .bal_produkte-row-left > .bal_produkte-image-column-left .balance-product-detail-image {
-    right: 16%;
-    top: -50px;
+    right: 50px;
+    top: -90px;
+    width: 150px;
   }
 }
 
 .balance-product-text-left {
   padding-left: 150px !important;
+  padding-right: 50px !important;
 }
 
 @media (max-width: 1800px) {
@@ -4245,11 +4232,13 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 @media (max-width: 767px) {
   .balance-product-text-left {
-    padding-left: auto;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
 .balance-product-text-right {
+  padding-left: 50px !important;
   padding-right: 150px !important;
 }
 
@@ -4291,7 +4280,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
 @media (max-width: 767px) {
   .balance-product-text-right {
-    padding-right: auto;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
@@ -4642,6 +4632,30 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   }
 }
 
+.bal_arc-decoration_home {
+  background-position: center top !important;
+  background-size: cover !important;
+  padding: 0px 400px 20px 400px !important;
+}
+
+@media (max-width: 1400px) {
+  .bal_arc-decoration_home {
+    padding: 0px 300px 20px 300px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bal_arc-decoration_home {
+    padding: 00px 100px 20px 100px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .bal_arc-decoration_home {
+    padding: 0px 50px 20px 50px !important;
+  }
+}
+
 .bal_circle_1 {
   height: 180px;
   width: 180px;
@@ -4952,4 +4966,25 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     display: block;
   }
 }
+
+/* Special styles for scrolled menu */
+/*@media (min-width: $bp_laptop) {
+  .header-fix.scrolled {
+    height: 120px;
+    transition: 1s;
+    .balance-header-menu {
+      margin-top: 42px !important;
+      transition: 1s;
+    }
+    figure {
+      margin-top: 20px !important;
+      transition: 1s;
+      img {
+        width: 324px !important;
+        height: 80px !important;
+        transition: 1s;
+      }
+    }
+  }
+}*/
 /*# sourceMappingURL=style.css.map */

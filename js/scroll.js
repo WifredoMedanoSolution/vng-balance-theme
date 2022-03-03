@@ -9,7 +9,7 @@ window.addEventListener(
     );
 
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.transform = "rotate(" + window.pageYOffset + "deg)";
+      elements[i].style.transform = "rotate(" + window.pageYOffset/3 + "deg)";
     }
 
     let bal_circle_1 = document.getElementsByClassName("bal_circle_1");
