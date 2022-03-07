@@ -3,7 +3,7 @@
 	<?php if ( is_front_page() ) { ?>
 	<div class="balance-footer-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/balance/BALANCE_Footer_Rundung_Gruen.svg');">
 	<?php } else { ?>	
-	<div class="balance-footer-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/balance/Footer-Background.png');">
+	<div class="balance-footer-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/balance/Footer-Background.svg');">
 	<?php } ?>
 		<div class="vc_container balance-footer-column">
 			<div class="wpb_column vc_column_container vc_col-sm-4">
@@ -104,25 +104,6 @@
 <!-- End of custom footer (Medano Solution) -->
 
 		<?php wp_footer();?>
-		<div id="sliding-popup" class="sliding-popup-bottom">
-		    <div class="popup-content info">
-		        <div id="popup-text">
-		            <h2>Diese Website verwendet Cookies.</h2>
-		            <p>Einige von ihnen sind essenziell, während andere uns helfen unser
-		                Onlineangebot zu verbessern und wirtschaftlich zu betreiben. <a href="/datenschutz">Hier</a>
-		                erhalten Sie weitere Informationen.</p>
-		        </div>
-		        <div id="popup-buttons">
-		            <div class="button-container agree-button-container">
-		                <button type="button" class="agree-button btn btn-primary">Weiter</button>
-		            </div>
-		            <div class="button-container decline-button-container">
-		                <button type="button" class="find-more-button btn btn-primary find-more-button-processed">Nur
-		                    essenzielle Cookies akzeptieren</button>
-		            </div>
-		        </div>
-		    </div>
-		</div>
 		<!-- Copyright (c) 2000-2019 etracker GmbH. All rights reserved. -->
 		<!-- This material may not be reproduced, displayed, modified or distributed -->
 		<!-- without the express prior written permission of the copyright holder. -->
