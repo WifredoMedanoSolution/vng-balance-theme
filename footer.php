@@ -84,7 +84,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="vc_row wpb_row vc_row-fluid">
+		<div class="vc_row wpb_row vc_row-fluid" style="margin-left: 0px !important; margin-right: 0px !important;">
 			<div class="wpb_column vc_column_container vc_col-sm-12">
 				<div class="vc_column-inner">
 					<div class="wpb_wrapper">
@@ -102,8 +102,7 @@
 	</div>
 </footer>
 <!-- End of custom footer (Medano Solution) -->
-
-		<?php wp_footer();?>
+		<?php wp_footer(); ?>
 		<!-- Copyright (c) 2000-2019 etracker GmbH. All rights reserved. -->
 		<!-- This material may not be reproduced, displayed, modified or distributed -->
 		<!-- without the express prior written permission of the copyright holder. -->

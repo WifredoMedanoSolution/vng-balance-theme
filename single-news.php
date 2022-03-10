@@ -77,5 +77,5 @@
 </main>
 
 <?php get_footer();?>
-<link rel="stylesheet" id="vc_font_awesome_5_shims-css" href="https://bal.vng.aliado.rocks/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.min.css?ver=6.2.0" type="text/css" media="all">
-<link rel="stylesheet" id="vc_font_awesome_5-css" href="https://bal.vng.aliado.rocks/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css?ver=6.2.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_font_awesome_5_shims-css" href="https://www.balance-vng.de/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.min.css?ver=6.2.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_font_awesome_5-css" href="https://www.balance-vng.de/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css?ver=6.2.0" type="text/css" media="all">
