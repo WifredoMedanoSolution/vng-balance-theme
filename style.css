@@ -373,6 +373,19 @@ body {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .wpb_column.vc_column_container .vc_col-sm-12 > .vc_column-inner,
+.wpb_column.vc_column_container .vc_col-sm-6 > .vc_column-inner,
+.wpb_column.vc_column_container .vc_col-sm-4 > .vc_column-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .balance-karriere-section .vc_row {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -622,7 +635,7 @@ header {
 }
 @media (max-width: 991px) {
   header {
-    position: relative;
+    top: -2px;
   }
 }
 header .header-fix {
@@ -858,11 +871,6 @@ main {
   }
   main.reactive {
     opacity: 0.3;
-  }
-}
-@media (max-width: 991px) {
-  main {
-    margin-top: 0px;
   }
 }
 main .youhavescrolled {
@@ -3705,6 +3713,23 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   }
 }
 
+#wonderpluginslider-container-1 {
+  display: block;
+}
+
+#wonderpluginslider-container-3 {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  #wonderpluginslider-container-1 {
+    display: none !important;
+  }
+
+  #wonderpluginslider-container-3 {
+    display: block !important;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -3881,15 +3906,14 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 
 /* Homapage 4x4 cards */
-@media (max-width: 991px) {
-  .balance-column-4x4 {
-    padding: 0px 30px !important;
-  }
-}
-
 /* Privacy policy accordion (Medano Solution) */
 .balance-accordion .vc_tta-panel .vc_tta-panel-body {
   margin: 50px;
+}
+@media (max-width: 767px) {
+  .balance-accordion .vc_tta-panel .vc_tta-panel-body {
+    margin: 10px;
+  }
 }
 .balance-accordion .vc_tta-panel .vc_tta-panel-heading {
   border-color: #ebebeb !important;
@@ -3949,6 +3973,15 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 .balance-accordion .vc_active .vc_tta-panel-heading h4 a span {
   margin-left: 30px !important;
+}
+
+/* Map page locations (Medano Solution) */
+#map .marker.mapboxgl-marker {
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
 }
 
 /* Map page accordion (Medano Solution) */
@@ -4433,25 +4466,28 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
   .balance-header-section .balance-header-row figure div.vc_single_image-wrapper div.bal_hamburger_bars {
     display: block;
   }
+  .balance-header-section .balance-header-row figure div.vc_single_image-wrapper img.bal_hamburguer_close {
+    display: none;
+    width: 32px !important;
+    height: 32px !important;
+    cursor: pointer;
+    transition: display 0.2s linear;
+    -webkit-transition: display 0.2s linear;
+    -moz-transition: display 0.2s linear;
+    -ms-transition: display 0.2s linear;
+    -o-transition: display 0.2s linear;
+  }
+  .balance-header-section .balance-header-row figure div.vc_single_image-wrapper img.bal_hamburguer_close.active {
+    display: block;
+    transition: display 0.2s linear;
+    -webkit-transition: display 0.2s linear;
+    -moz-transition: display 0.2s linear;
+    -ms-transition: display 0.2s linear;
+    -o-transition: display 0.2s linear;
+  }
 }
 .balance-header-section .balance-header-row figure div.vc_single_image-wrapper img.bal_hamburguer_close {
   display: none;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  transition: display 0.2s linear;
-  -webkit-transition: display 0.2s linear;
-  -moz-transition: display 0.2s linear;
-  -ms-transition: display 0.2s linear;
-  -o-transition: display 0.2s linear;
-}
-.balance-header-section .balance-header-row figure div.vc_single_image-wrapper img.bal_hamburguer_close.active {
-  display: block;
-  transition: display 0.2s linear;
-  -webkit-transition: display 0.2s linear;
-  -moz-transition: display 0.2s linear;
-  -ms-transition: display 0.2s linear;
-  -o-transition: display 0.2s linear;
 }
 
 /* Custom styles Product rows (Medano Solution) */
@@ -4491,9 +4527,6 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
     display: flex;
     flex-direction: column-reverse;
   }
-  .bal_produkte-section-right .bal_produkte-row-right .wpb_column {
-    padding: 0 20px;
-  }
   .bal_produkte-section-right .bal_produkte-row-right > .bal_produkte-image-column-right {
     padding-right: 0px;
   }
@@ -4505,9 +4538,6 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 
   .bal_produkte-section-left .bal_produkte-row-left {
     padding-right: 0px !important;
-  }
-  .bal_produkte-section-left .bal_produkte-row-left .wpb_column {
-    padding: 0 20px;
   }
   .bal_produkte-section-left .bal_produkte-row-left > .bal_produkte-image-column-left {
     padding-left: 0px;
@@ -4554,8 +4584,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 @media (max-width: 767px) {
   .balance-product-text-left {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -4595,8 +4625,8 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 }
 @media (max-width: 767px) {
   .balance-product-text-right {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -4794,7 +4824,7 @@ div.bal_aktuelles-grid div.vc_pageable-load-more-btn div a:hover {
 .balance-ueber-uns.bal_icons-chain .bal_chain > .bal_chain-line {
   position: absolute;
   top: 180px;
-  height: 300px;
+  height: 380px;
   width: 3px;
   background-color: #ffcc00;
   z-index: -1;
@@ -4888,12 +4918,16 @@ section.balance-ueber-uns.bal_icons-chain p {
     background-image: url(./img/balance/leitbild-mobile-background.jpg) !important;
     height: 600px;
     margin-bottom: 60px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   section.balance-ueber-uns.bal_leitbild-section .balance-p-leitbild {
     padding-right: 0px !important;
   }
   section.balance-ueber-uns.bal_unser {
     margin-bottom: 50px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 .bal_arc-decoration {
@@ -4914,7 +4948,7 @@ section.balance-ueber-uns.bal_icons-chain p {
 @media (max-width: 767px) {
   .bal_arc-decoration {
     margin-top: -140px !important;
-    padding: 150px 50px 50px 50px !important;
+    padding: 150px 15px 50px 15px !important;
   }
 }
 
@@ -4935,7 +4969,7 @@ section.balance-ueber-uns.bal_icons-chain p {
 }
 @media (max-width: 767px) {
   .bal_arc-decoration_home {
-    padding: 0px 50px 20px 50px !important;
+    padding: 0px 15px 20px 15px !important;
   }
 }
 
@@ -5291,7 +5325,7 @@ section.balance-ueber-uns.bal_icons-chain p {
   cursor: pointer;
   position: fixed;
   right: -10px;
-  bottom: 20%;
+  bottom: 10%;
   z-index: 1001;
   display: none;
 }

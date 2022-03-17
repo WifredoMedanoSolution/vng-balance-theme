@@ -9,13 +9,11 @@
   padding: 200px;
   border-radius: 10px;
 }
-
 @media (max-width: 1400px) {
   .mapbox-teaser-overlay {
     padding: 100px;
   }
 }
-
 @media (max-width: 700px) {
   .mapbox-teaser-overlay {
     padding: 50px;
@@ -39,15 +37,12 @@
   color: white;
   font-size: 28px;
 }
-
 .mapbox-teaser-text p {
   font-size: 16px;
 }
-
 .mapbox-teaser-text p a {
   color: #ffcc00;
 }
-
 .mapbox-teaser-text p a:hover {
   color: white;
 }
@@ -66,12 +61,10 @@
   margin-top: 30px;
   border-radius: 100px;
 }
-
 .load-map-button:hover {
   color: white;
   background-color: #7aa62c;
 }
-
 @media (max-width: 1400px) {
   .load-map-button {
     font-size: 20px;
@@ -84,23 +77,19 @@
   border-radius: 10px;
   height: 800px;
 }
-
 @media (max-width: 1400px) {
   #map {
     height: 500px;
   }
 }
-
 #map canvas {
   visibility: visible;
   position: relative;
 }
-
 #map svg {
   height: auto;
   width: auto;
 }
-
 #map .marker {
   background-image: url(../img/balance/map-marker.png);
   background-size: contain;
@@ -109,37 +98,30 @@
   height: 24px;
   cursor: pointer;
 }
-
 #map .mapboxgl-popup-wrapper {
   left: 0;
   top: 0;
 }
-
 #map .mapboxgl-popup-content {
   font-size: 16px !important;
   min-width: 400px;
 }
-
 #map .mapboxgl-popup-content table {
   border-collapse: collapse;
   border-style: hidden;
   width: 100%;
   margin-bottom: 20px;
 }
-
 #map .mapboxgl-popup-content table tr {
   border: 1px solid black;
 }
-
 #map .mapboxgl-popup-content table tr td {
   vertical-align: top;
   padding: 10px 0px;
 }
-
 #map .mapboxgl-popup-content table tr td:first-child {
   width: 40%;
 }
-
 #map .mapboxgl-popup-content a {
   color: #7aa62c;
   background-image: url(../img/balance/download-link.png);
@@ -147,21 +129,17 @@
   background-size: contain;
   padding-left: 20px;
 }
-
 #map .mapboxgl-popup-content a:hover {
   color: #97cb3a;
 }
-
 #map .mapboxgl-popup-content .mapboxgl-popup-close-button {
   font-size: 30px;
   right: 3px;
   top: 3px;
 }
-
 #map .mapboxgl-popup-content .mapboxgl-popup-close-button:hover {
   background-color: #80808059;
 }
-
 #map .mapboxgl-popup-content .mapboxgl-popup-close-button:focus {
   outline: none;
 }
@@ -172,31 +150,26 @@
   height: 800px;
   overflow-y: auto;
 }
-
 @media (max-width: 1400px) {
   .location-list-container {
     height: 500px;
   }
 }
-
 @media (max-width: 767px) {
   .location-list-container {
     margin-top: 20px;
   }
 }
-
 .location-list-container .location {
   cursor: pointer;
   border-radius: 20px;
   padding: 3px 10px;
   margin-left: 5px;
 }
-
 .location-list-container .location:hover {
-  background: #d3f216;
+  background: #f0e9de;
   color: white;
 }
-
 .location-list-container .location.active {
   background: #afca0b;
   color: white;
@@ -208,23 +181,19 @@
   /* Handle */
   /* Handle on hover */
 }
-
 .location-list-container::-webkit-scrollbar {
   width: 20px;
 }
-
 .location-list-container::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 20px 0px #f0e9de !important;
-          box-shadow: inset 20px 0px #f0e9de !important;
+  box-shadow: inset 20px 0px #f0e9de !important;
   border-radius: 10px;
 }
-
 .location-list-container::-webkit-scrollbar-thumb {
   background: #afca0b !important;
   border-radius: 10px;
 }
-
 .location-list-container::-webkit-scrollbar-thumb:hover {
   background: #a7c00a;
 }
+
 /*# sourceMappingURL=mapbox.css.map */

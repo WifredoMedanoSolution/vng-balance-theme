@@ -38,11 +38,12 @@ jQuery(document).ready(function ($) {
         $(this).data("title") +
         "</h5><div class='mapboxgl-popup-details'>" +
         $(this).data("description") +
-        "</div><div class='mapboxgl-popup-pdf'><a target='_blank' href=" +
+        "</div>"
+		/*"<div class='mapboxgl-popup-pdf'><a target='_blank' href=" +
         $(this).data("url") +
         " >" +
         $(this).data("urltitle") +
-        "</a></div>"
+        "</a></div>"*/ //Removed download link from map popup
     ); //popup content
 
     /* create marker div */

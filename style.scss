@@ -25,7 +25,7 @@
 // Prevents horizontal scroll on Mobile devices
 // html,
 // body {
-//   overflow-x: hidden; //! Test "clip" https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
+//   overflow-x: hidden;
 // }
 // body {
 //   position: relative;
@@ -35,6 +35,27 @@ body {
 }
 
 // ----------------| END CSS Tools: RESET CSS |------------
+
+// ================| GENERAL STYLES |================
+
+@media (max-width: $bp_mobile) {
+  .wpb_column.vc_column_container {
+    .vc_col-sm-12,
+    .vc_col-sm-6,
+    .vc_col-sm-4 {
+      & > .vc_column-inner {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+  }
+  .balance-karriere-section .vc_row {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+// ----------------| END GENERAL STYLES |------------
 
 * {
   padding: 0;
@@ -245,7 +266,8 @@ li:before {
 
 header {
   @media (max-width: $bp_tablet) {
-    position: relative;
+    // position: relative;
+    top: -2px;
   }
   position: fixed;
   top: 0;
@@ -496,7 +518,7 @@ main {
     }
   }
   @media (max-width: $bp_tablet) {
-    margin-top: 0px;
+    // margin-top: 0px;
   }
   .youhavescrolled {
     position: relative;
@@ -2579,6 +2601,22 @@ div.bal_aktuelles-grid {
   }
 }
 
+#wonderpluginslider-container-1 {
+  display: block;
+}
+#wonderpluginslider-container-3 {
+  display: none !important;
+}
+@media (max-width: $bp_tablet) {
+  #wonderpluginslider-container-1 {
+    display: none !important;
+  }
+
+  #wonderpluginslider-container-3 {
+    display: block !important;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -2748,7 +2786,7 @@ div.bal_aktuelles-grid {
 /* Homapage 4x4 cards */
 .balance-column-4x4 {
   @media (max-width: $bp_tablet) {
-    padding: 0px 30px !important;
+    // padding: 0px 30px !important;
   }
 }
 
@@ -2757,6 +2795,11 @@ div.bal_aktuelles-grid {
   .vc_tta-panel {
     .vc_tta-panel-body {
       margin: 50px;
+    }
+    @media (max-width: $bp_mobile) {
+      .vc_tta-panel-body {
+        margin: 10px;
+      }
     }
     .vc_tta-panel-heading {
       border-color: #ebebeb !important;
@@ -2816,6 +2859,15 @@ div.bal_aktuelles-grid {
       }
     }
   }
+}
+
+/* Map page locations (Medano Solution) */
+#map .marker.mapboxgl-marker {
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
 }
 
 /* Map page accordion (Medano Solution) */
@@ -3327,26 +3379,29 @@ div.bal_aktuelles-grid {
           div.bal_hamburger_bars {
             display: block;
           }
-        }
-        img.bal_hamburguer_close {
-          display: none;
-          width: 32px;
-          height: 32px;
-          cursor: pointer;
-          transition: display 0.2s linear;
-          -webkit-transition: display 0.2s linear;
-          -moz-transition: display 0.2s linear;
-          -ms-transition: display 0.2s linear;
-          -o-transition: display 0.2s linear;
-
-          &.active {
-            display: block;
+          img.bal_hamburguer_close {
+            display: none;
+            width: 32px !important;
+            height: 32px !important;
+            cursor: pointer;
             transition: display 0.2s linear;
             -webkit-transition: display 0.2s linear;
             -moz-transition: display 0.2s linear;
             -ms-transition: display 0.2s linear;
             -o-transition: display 0.2s linear;
+
+            &.active {
+              display: block;
+              transition: display 0.2s linear;
+              -webkit-transition: display 0.2s linear;
+              -moz-transition: display 0.2s linear;
+              -ms-transition: display 0.2s linear;
+              -o-transition: display 0.2s linear;
+            }
           }
+        }
+        img.bal_hamburguer_close {
+          display: none;
         }
       }
     }
@@ -3383,6 +3438,14 @@ div.bal_aktuelles-grid {
 }
 
 @media (max-width: $bp_mobile) {
+  .bal_produkte-section,
+  .bal_produkte-section-left,
+  .bal_produkte-section-right {
+    .vc_row.wpb_row.vc_row-fluid {
+      //   padding-left: 0px !important;
+      //   padding-right: 0px !important;
+    }
+  }
   .bal_produkte-main-image {
     img {
       height: 318px !important;
@@ -3397,7 +3460,7 @@ div.bal_aktuelles-grid {
       flex-direction: column-reverse;
 
       .wpb_column {
-        padding: 0 20px;
+        // padding: 0 20px;
       }
 
       & > .bal_produkte-image-column-right {
@@ -3417,7 +3480,7 @@ div.bal_aktuelles-grid {
       padding-right: 0px !important;
 
       .wpb_column {
-        padding: 0 20px;
+        // padding: 0 20px;
       }
 
       & > .bal_produkte-image-column-left {
@@ -3455,8 +3518,8 @@ div.bal_aktuelles-grid {
     padding-left: 30px !important;
   }
   @media (max-width: 767px) {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -3482,8 +3545,8 @@ div.bal_aktuelles-grid {
     padding-right: 30px !important;
   }
   @media (max-width: 767px) {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -3692,7 +3755,7 @@ div.bal_aktuelles-grid {
       & > .bal_chain-line {
         position: absolute;
         top: 180px;
-        height: 300px;
+        height: 380px;
         width: 3px;
         background-color: #ffcc00;
         z-index: -1;
@@ -3816,6 +3879,8 @@ div.bal_aktuelles-grid {
       background-image: url(./img/balance/leitbild-mobile-background.jpg) !important;
       height: 600px;
       margin-bottom: 60px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
 
       .balance-p-leitbild {
         padding-right: 0px !important;
@@ -3824,6 +3889,8 @@ div.bal_aktuelles-grid {
 
     &.bal_unser {
       margin-bottom: 50px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
     }
   }
 }
@@ -3840,7 +3907,7 @@ div.bal_aktuelles-grid {
   }
   @media (max-width: 767px) {
     margin-top: -140px !important;
-    padding: 150px 50px 50px 50px !important;
+    padding: 150px 15px 50px 15px !important;
   }
 }
 
@@ -3855,7 +3922,7 @@ div.bal_aktuelles-grid {
     padding: 00px 100px 20px 100px !important;
   }
   @media (max-width: 767px) {
-    padding: 0px 50px 20px 50px !important;
+    padding: 0px 15px 20px 15px !important;
   }
 }
 
@@ -4195,7 +4262,7 @@ div.bal_aktuelles-grid {
   cursor: pointer;
   position: fixed;
   right: -10px;
-  bottom: 20%;
+  bottom: 10%;
   z-index: 1001;
   display: none;
   @media (max-width: $bp_tablet) {
